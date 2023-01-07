@@ -1,0 +1,39 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+}
+.media {
+  @apply flex flex-row justify-center items-center h-[8rem] gap-[1rem] w-[40%];
+}
+
+.copyright {
+  width: 60%;
+  background-color: #0f0326;
+  height: 8rem;
+  border-top: 0.25px solid grey;
+  color: gray;
+}
+.brand {
+  background-image: url("./assets/abhishek-choudhary-99BE7GNmavk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.details {
+  @apply w-[21%]  h-[40%] bg-[white] rounded-[5px];
+}
+.deal {
+  background-image: url("./assets/pirata-studio-film-GlVr1QBPYv8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  @apply w-[90%] h-[78%] mt-[1rem];
+}
+.container {
+  @apply w-[90%] h-[55vh] border-[1px] border-[#d1a9db] flex flex-col items-center rounded-[3px] bg-[white];
+}
+.mail {
+  border-top: 1px dotted #d1a9db;
+}
