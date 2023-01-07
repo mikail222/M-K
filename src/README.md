@@ -4,7 +4,7 @@
   - [Description](#Description)
   - [Links](#links)
 - [Technology](#Technology)
-  - [Knowledge-gain] (#knowledge gain)
+  - [Knowledge-gain] (#knowledge-gain)
   - [progressive development](#progressive-development)
   - [ resources](#resources)
 - [Author](#author)

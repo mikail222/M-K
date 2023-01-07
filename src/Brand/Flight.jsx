@@ -7,9 +7,6 @@ import { RiArrowDropRightLine } from "react-icons/ri";
 
 const Flight = () => {
   const day = new Date();
-  const add = day.toDateString().slice(0, 10).split(", ");
-  console.log(add.map((x) => x.slice(9, 10) + 3));
-
   return (
     <div>
       {" "}
@@ -58,8 +55,7 @@ const Flight = () => {
               <p className="text-[lightgray] text-[1rem] mr-[0.5rem]">
                 Return{" "}
               </p>
-              <p className="text-[0.85rem]"></p>
-              {day.toDateString().slice(0, 10)}
+              <p className="text-[0.85rem]">Mon,Jan 09</p>
             </div>
           </div>
         </div>
