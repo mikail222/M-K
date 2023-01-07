@@ -4,7 +4,7 @@
   - [Description](#Description)
   - [Links](#links)
 - [Technology](#Technology)
-  - [Knowledge gain](#knowledge gain)
+  - [Knowledge-gain] (#knowledge gain)
   - [progressive development](#progressive-development)
   - [ resources](#resources)
 - [Author](#author)
@@ -12,44 +12,43 @@
 
 # Title
 
-### Flight Booking
+### M & K Flight Booking
 
 ## Description
 
+- An online Flight Booking app
+
 ### About the App
 
-- An online Flight Booking app
 - It consist of a page for a site description, call-to-action,
 - the organization goal and giving back comfort to humanity.
 -
 
 ### Links
 
-- Solution URL: (https://M&K.netlify.app)
-
-### Technology
+- Solution URL: (https://M-K.netlify.app)
 
 #### technologies
 
-- ReactJs
+- React-js
+- Atomic Design Structures
 - Tailwind CSS
 - css
-- Atomic Design file Structures
 
 ### knowledge gain
 
-- In this project i was able to learn the use of:
+- consistency
+- better utilization of user interface
+- icons fill property
+- better utilization of tailwind css
 
-* consistency
-* better utilization of user interface
-* CSS to write text on a background image
-* CSS fill property
+### progressive development
 
-### Continued-development
-
-I have learned greatly in this project. However, i will like improve more on the usage of react libraries. I also need to work and learn more on animation and responsiveness.
+i have achieved alot regarding user interface and structering of project.
+also am able to experience how far i can stay working enthusiatically and diligently.
 
 ### resources
 
 - react-icons
 - unsplash images
+- Tailwind liberary
