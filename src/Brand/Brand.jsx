@@ -12,8 +12,8 @@ import Hotel from "./Hotel";
 const Brand = () => {
   const [count, setCount] = useState(1);
   const [allCountries, setAllCountries] = useState([]);
-  const [flightDetails, setFlightDetails] = useState(false);
-  const [hotelDetails, setHotelDetails] = useState(false);
+  const [flightDetails, setFlightDetails] = useState(true);
+  const [hotelDetails, setHotelDetails] = useState(true);
   useEffect(() => {
     axios.get("https://restcountries.com/v3.1/all").then((response) => {
       setAllCountries(response.data);
@@ -37,14 +37,18 @@ const Brand = () => {
               <div className=" w-[60%] flex flex-row ml-[2rem]">
                 <button
                   className="flex flex-row justify-center  items-center gap-[0.5rem] outline-[#0f0326] rounded-[3px] w-[20%] p-[6px] "
-                  onClick={(e) => setFlightDetails(true)}
+                  onClick={(e) =>
+                    setHotelDetails(false) || setFlightDetails(true)
+                  }
                 >
                   <RiPlaneFill className="fill-[#0f0326] " />{" "}
                   <p className="text-[#0f0326]  text-[1rem]">𝓕𝓛𝓘𝓖𝓗𝓣𝓢</p>
                 </button>
                 <button
                   className="w-[8rem] flex flex-row gap-[0.5rem] justify-center items-center ml-[1rem]  outline-1  outline-[#0f0326] "
-                  onClick={(e) => setHotelDetails(true)}
+                  onClick={(e) =>
+                    setFlightDetails(false) || setHotelDetails(true)
+                  }
                 >
                   <ImHome3 className="fill-[black]" />
                   <p className="text-[black] text-[1rem] ">𝓗𝓞𝓣𝓔𝓛𝓢</p>
