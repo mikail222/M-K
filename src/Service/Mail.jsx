@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Mail = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   return (
-    <div className=" mail border-[#d1a9db] w-[100%] h-[40vh] flex flex-row justify-around  items-center">
+    <div
+      data-aos="fade-up"
+      className=" mail border-[#d1a9db] w-[100%] h-[40vh] flex flex-row justify-around  items-center"
+    >
       <div className="flex flex-row gap-[0.5rem]  w-[50%]">
         <img
           src="https://images.pond5.com/blue-color-hand-speaker-wave-footage-164461718_iconl.jpeg"

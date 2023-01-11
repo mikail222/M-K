@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Collaboration_Company = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   return (
-    <div className="w-[100%] h-[30vh]">
+    <div data-aos="slide-up" className="w-[100%] h-[30vh]">
       <div className="flex flex-row gap-[2rem] mt-[6%] justify-center  items-center">
         <img
           src="https://logovtor.com/wp-content/uploads/2020/02/international-air-transport-association-iata-logo-vector.png"

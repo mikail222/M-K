@@ -40,7 +40,7 @@
 .slider {
   margin: 0.5rem 0px;
   overflow: hidden;
-  @apply w-[70%] h-[90vh] items-center border-x-[10px] border-[1px];
+  @apply w-[70%] h-[90vh] items-center border-y-[50px] border-[10px] rounded-[50px] border-[#0f0326];
 }
 .slide-container {
   @apply w-[8000px] h-[100%] bg-[transparent] rounded-[50px];

@@ -12,9 +12,9 @@ const Trending_deal = () => {
   const departure = new Date();
   const returnDate = day.setDate(day.getDate() + 8);
   return (
-    <div data-aos="fade-left">
+    <div>
       <div className=" w-[70%] h-[50vh] flex flex-row gap-[1rem] ml-[12rem]">
-        <div className="container">
+        <div data-aos="fade-up" className="container">
           <div className="deal">
             <div className=" mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
               <p>Top flight deal</p>
@@ -43,7 +43,7 @@ const Trending_deal = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div data-aos="fade-down" className="container">
           <div className="deal">
             <div className=" mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
               <p>Top flight deal</p>
@@ -72,7 +72,7 @@ const Trending_deal = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div data-aos="fade-left" className="container">
           <div className="deal">
             <div className=" mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
               <p>Top flight deal</p>
