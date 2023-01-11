@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   return (
-    <div className=" w-[98%] h-[40vh] flex flex-row  ml-[2%] justify-center  gap-[1rem]">
+    <div
+      data-aos="fade-up"
+      className=" w-[98%] h-[40vh] flex flex-row  ml-[2%] justify-center  gap-[1rem]"
+    >
       <div className=" w-[25%] h-[20%] flex flex-row  gap-[1.5rem]">
         <img
           src="https://m.media-amazon.com/images/I/71rsagJu5tL._AC_UY500_.jpg"

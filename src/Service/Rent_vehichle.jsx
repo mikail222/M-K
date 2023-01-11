@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { RiArrowDropRightLine } from "react-icons/ri";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Rent_vehichle = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   return (
-    <div className="w-[100%] h-[90vh] flex flex-row justify-center mt-[10%] ">
+    <div
+      data-aos="zoom-in"
+      className="w-[100%] h-[90vh] flex flex-row justify-center mt-[10%] "
+    >
       <div className="w-[65%] flex flex-col justify-center items-center ">
         <img
           src="https://www.abettervaluecarhire.com.au/wp-content/uploads/2022/05/2014-2015-8-Seat-Hyundai-Imax-Auto.jpg"

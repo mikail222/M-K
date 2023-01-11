@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { TbArrowNarrowDown } from "react-icons/tb";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Trending_deal = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   const day = new Date();
   const departure = new Date();
   const returnDate = day.setDate(day.getDate() + 8);
   return (
-    <div>
+    <div data-aos="fade-left">
       <div className=" w-[70%] h-[50vh] flex flex-row gap-[1rem] ml-[12rem]">
         <div className="container">
           <div className="deal">

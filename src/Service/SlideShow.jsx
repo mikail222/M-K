@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../assets/haidan-IOBIgKmjm1Y-unsplash.jpg";
 import img2 from "../assets/nupo-deyon-daniel-67ruAEYmp4c-unsplash.jpg";
 import img3 from "../assets/svetlana-gumerova-0wM3sBMDXq4-unsplash.jpg";
 import img4 from "../assets/lycheeart-BZG5p-u35tI-unsplash.jpg";
 import img5 from "../assets/masarath-alkhaili-vmCHHfp25lU-unsplash.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SlideShow = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   const picture = [
     { image: img1, name: "Saudi - Arabia" },
     { image: img2, name: "Lagos" },
@@ -16,7 +21,7 @@ const SlideShow = () => {
   console.log(picture[1]);
 
   return (
-    <div className="mt-[5%] ">
+    <div data-aos="flip-left" className="mt-[5%] ">
       <p className="text-[2rem]">
         𝕰𝖝𝖕𝖑𝖔𝖗𝖊 𝖙𝖍𝖊 𝖈𝖔𝖚𝖓𝖙𝖗𝖞 𝖔𝖋 𝖞𝖔𝖚𝖗 𝕯𝖗𝖊𝖆𝖒 𝕿𝖔𝖉𝖆𝖞 𝖜𝖎𝖙𝖍...
         <em className="text-[2.5rem] font-bold  text-[#d1a9db]">𝔐 & 𝔨</em>{" "}
