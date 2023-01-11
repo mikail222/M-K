@@ -5,9 +5,9 @@ const Nav_bar = () => {
 
   return (
     <div>
-      <div className="bg-[white] cursor-pointer w-[100%] h-[16vh] flex flex-row items-center justify-between">
+      <div className="bg-[white] cursor-pointer w-[100%] h-[16vh] flex flex-row items-center justify-between overflow-hidden">
         <div>
-          <p className="text-[#d1a9db] w-[100%] text-[2rem] p-[10px] rounded-[100%] hover:bg-[transparent]  hover:text-[black] hover:border-none border-[1px] bg-[#0f0326]  ml-[2rem] border-[#d1a9db]">
+          <p className="text-[#d1a9db] w-[100%] text-[2rem] p-[10px] rounded-[100%] hover:bg-[transparent]  hover:text-[black] hover:border-[#0f0326] border-[1px] bg-[#0f0326]  ml-[2rem] border-[#d1a9db]">
             𝔐&𝔨
           </p>
         </div>

@@ -3,12 +3,12 @@ import { RiArrowDropRightLine } from "react-icons/ri";
 
 const Rent_vehichle = () => {
   return (
-    <div className="w-[100%] h-[90vh] flex flex-row justify-center">
+    <div className="w-[100%] h-[90vh] flex flex-row justify-center mt-[10%] ">
       <div className="w-[65%] flex flex-col justify-center items-center ">
         <img
           src="https://www.abettervaluecarhire.com.au/wp-content/uploads/2022/05/2014-2015-8-Seat-Hyundai-Imax-Auto.jpg"
           alt=""
-          className="w-[90%] h-[85%] mt-[4rem]"
+          className="w-[90%] h-[90%] mt-[4rem]"
         />
       </div>
       <div className="w-[30%] flex flex-col justify-left items-left text-left">

@@ -3,6 +3,9 @@ import { RiArrowDropRightLine } from "react-icons/ri";
 import { TbArrowNarrowDown } from "react-icons/tb";
 
 const Trending_deal = () => {
+  const day = new Date();
+  const departure = new Date();
+  const returnDate = day.setDate(day.getDate() + 8);
   return (
     <div>
       <div className=" w-[70%] h-[50vh] flex flex-row gap-[1rem] ml-[12rem]">
@@ -18,8 +21,8 @@ const Trending_deal = () => {
             </div>
             <div className="text-[white] text-left ml-[1rem] mt-[5rem]">
               <p className="text-[2rem]  font-extrabold">₦400,540</p>
-              <p className="text-[0.85rem]">
-                Sun,Jan 01,2023 - Mon,Jan 09,2023
+              <p className="text-[0.85rem] mt-[0.5rem]">
+                {departure.toDateString()} - {day.toDateString()}
               </p>
             </div>
           </div>
@@ -47,8 +50,8 @@ const Trending_deal = () => {
             </div>
             <div className="text-[white]  text-left ml-[1rem] mt-[5rem]">
               <p className="text-[2rem] font-extrabold">₦535,492</p>
-              <p className="text-[0.85rem] ">
-                Sun, Jan 01, 2023 - Mon, Jan 09, 2023
+              <p className="text-[0.85rem]  mt-[0.5rem]">
+                {departure.toDateString()} - {day.toDateString()}
               </p>
             </div>
           </div>
@@ -76,8 +79,9 @@ const Trending_deal = () => {
             </div>
             <div className="text-[white] text-left ml-[1rem] mt-[5rem]">
               <p className="text-[2rem] font-extrabold">₦335,102</p>
-              <p className="text-[0.85rem] font-thin ">
-                Sun, Jan 01, 2023 - Mon, Jan 09, 2023
+              <p className="text-[0.85rem] font-thin   mt-[0.5rem]">
+                {" "}
+                {departure.toDateString()} - {day.toDateString()}
               </p>
             </div>
           </div>

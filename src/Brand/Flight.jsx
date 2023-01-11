@@ -7,6 +7,9 @@ import { RiArrowDropRightLine } from "react-icons/ri";
 
 const Flight = () => {
   const day = new Date();
+  const departure = new Date();
+  const returnDate = day.setDate(day.getDate() + 3);
+  console.log(returnDate);
   return (
     <div>
       {" "}
@@ -43,8 +46,8 @@ const Flight = () => {
             <FcCalendar className="w-[20px] h-[20px]" />
             <div className="flex flex-col justify-center items-center p-[10px]">
               <p className="text-[lightgray] text-[1rem]">Departure</p>
-              <p className="text-[0.85rem]">
-                {day.toDateString().slice(0, 10)}
+              <p className="text-[0.85rem]  font-bold">
+                {departure.toDateString().slice(0, 10)}
               </p>
             </div>
           </div>
@@ -55,7 +58,9 @@ const Flight = () => {
               <p className="text-[lightgray] text-[1rem] mr-[0.5rem]">
                 Return{" "}
               </p>
-              <p className="text-[0.85rem]">Mon,Jan 09</p>
+              <p className="text-[0.85rem]  font-bold">
+                {day.toDateString().slice(0, 10)}
+              </p>
             </div>
           </div>
         </div>

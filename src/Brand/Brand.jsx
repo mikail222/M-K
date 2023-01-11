@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { RiPlaneFill } from "react-icons/ri";
-import { ImHome3 } from "react-icons/im";
+import { ImGift, ImHome3 } from "react-icons/im";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { RiArrowLeftRightFill } from "react-icons/ri";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -25,6 +25,17 @@ const Brand = () => {
     capital, flags;
   });
   const day = new Date();
+
+  var i = 0;
+  const brandImg = document.getElementsByClassName("brandSlide");
+  const changeImg = () => {
+    if (i > img - 1) {
+      i = 0;
+    }
+    brandImg.src = picture[i];
+    i++;
+    setTimeout("changeImg()", 1000);
+  };
   return (
     <div className="w-[100%] h-[100vh]">
       <div className="brand flex flex-col justify-center items-center w-[100%] h-[60vh]">
@@ -36,7 +47,7 @@ const Brand = () => {
             <div className="w-[100%] h-[28%] flex flex-row items-center justify-between bg-white ">
               <div className=" w-[60%] flex flex-row ml-[2rem]">
                 <button
-                  className="flex flex-row justify-center  items-center gap-[0.5rem] outline-[#0f0326] rounded-[3px] w-[20%] p-[6px] "
+                  className="flex flex-row justify-center  items-center gap-[0.5rem] outline-[#01004d] rounded-[3px] w-[20%] p-[6px] "
                   onClick={(e) =>
                     setHotelDetails(false) || setFlightDetails(true)
                   }
@@ -79,7 +90,6 @@ const Brand = () => {
               </div>
             </div>
             {flightDetails ? <Flight /> : hotelDetails ? <Hotel /> : ""}
-            {/* {hotelDetails ? <Hotel /> : <Flight />} */}
           </div>
         </div>
       </div>

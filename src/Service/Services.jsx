@@ -1,6 +1,4 @@
 import React from "react";
-import baggage from "../assets/dario-gomes-egEHHnn7EWo-unsplash.jpg";
-// import { cap } from "../assets";
 
 const Services = () => {
   return (

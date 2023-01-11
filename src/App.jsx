@@ -10,6 +10,7 @@ import Rent_vehichle from "./Service/Rent_vehichle";
 import Collaboration_Company from "./Service/Collaboration_Company";
 import Mail from "./Service/Mail";
 import Services from "./Service/Services";
+import SlideShow from "./Service/SlideShow";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Services />
       <Flight_Deal />
       <Trending_deal />
+      <SlideShow />
       <Rent_vehichle />
       <Collaboration_Company />
       <Mail />

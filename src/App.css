@@ -37,3 +37,103 @@
 .mail {
   border-top: 1px dotted #d1a9db;
 }
+.slider {
+  margin: 0.5rem 0px;
+  overflow: hidden;
+  @apply w-[70%] h-[90vh] items-center border-x-[10px] border-[1px];
+}
+.slide-container {
+  @apply w-[8000px] h-[100%] bg-[transparent] rounded-[50px];
+  position: relative;
+  margin: 0px 0px 0px -7500px;
+  animation-name: slide_image;
+  animation-duration: 60s;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes slide_image {
+  0% {
+    left: 0px;
+  }
+  5% {
+    left: 0px;
+  }
+  10% {
+    left: 1200px;
+  }
+  15% {
+    left: 1200px;
+  }
+  20% {
+    left: 2400px;
+  }
+  25% {
+    left: 2400px;
+  }
+  30% {
+    left: 3600px;
+  }
+  35% {
+    left: 3600px;
+  }
+  40% {
+    left: 4800px;
+  }
+  45% {
+    left: 4800px;
+  }
+  50% {
+    left: 6000px;
+  }
+  55% {
+    left: 6000px;
+  }
+  60% {
+    left: 7200px;
+  }
+  65% {
+    left: 7200px;
+  }
+  70% {
+    left: 8400px;
+  }
+  75% {
+    left: 8400px;
+  }
+  80% {
+    left: 9600px;
+  }
+  85% {
+    left: 9600px;
+  }
+  90% {
+    left: 10800px;
+  }
+  /* 95% {
+    left: 10800px;
+  } */
+  100% {
+    left: 10800px;
+  }
+}
+.slide-container p {
+  background-image: linear-gradient(to right, transparent, #0f0326);
+}
+.image {
+  position: relative;
+  float: left;
+  margin: 0px 15rem;
+  @apply flex  flex-row  justify-center items-center  w-[51vw] h-[100%];
+}
+@media screen and (max-width: 480px) {
+  .image {
+    width: 100vw;
+    height: 30vh;
+    margin: 0px 0.15rem;
+  }
+}
+.image img {
+  @apply w-[100vw] h-[90%] object-fill items-center;
+}

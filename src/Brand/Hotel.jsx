@@ -1,16 +1,18 @@
 import React from "react";
-import { RiPlaneFill } from "react-icons/ri";
+import { BiHotel } from "react-icons/bi";
 import { BsFillPersonFill } from "react-icons/bs";
 import { FcCalendar } from "react-icons/fc";
 import { RiArrowDropRightLine } from "react-icons/ri";
 
 const Hotel = () => {
   const date = new Date();
+  const days = new Date();
+  days.setDate(days.getDate() + 3);
   return (
     <div>
       <div className="w-[100%] h-[30vh] flex flex-row gap-[0.5rem]  justify-center mt-[1rem]">
         <div className="details flex flex-row gap-[0.65rem] justify-center items-center">
-          <RiPlaneFill className="fill-[lightgray] " />
+          <BiHotel className="fill-[lightgray] w-[25px] h-[25px] " />
           <form className="flex flex-col justify-center items-center">
             <label htmlFor="" className="text-[grey] text-[0.75rem] mr-[9rem]">
               Going to?
@@ -23,7 +25,7 @@ const Hotel = () => {
           </form>
         </div>
         <div className="details flex flex-row gap-[0.65rem] justify-center items-center">
-          <BsFillPersonFill className="fill-[lightgray] " />
+          <BsFillPersonFill className="fill-[lightgray] w-[20px] h-[25px]" />
           <form className="flex flex-col justify-center items-center">
             <label htmlFor="" className="text-[grey] text-[0.75rem] mr-[6rem] ">
               Rooms and guests
@@ -40,7 +42,7 @@ const Hotel = () => {
             <FcCalendar className="w-[20px] h-[20px]" />
             <div className="flex flex-col justify-center items-center p-[10px]">
               <p className="text-[grey] text-[0.75rem]">Check-in</p>
-              <p className="text-[0.85rem]">
+              <p className="text-[0.85rem] font-bold">
                 {date.toDateString().slice(0, 10)}
               </p>
             </div>
@@ -52,7 +54,9 @@ const Hotel = () => {
               <p className="text-[grey] text-[0.75rem] mr-[0.5rem]">
                 Check-out
               </p>
-              <p className="text-[0.85rem]">Mon Jan 09</p>
+              <p className="text-[0.85rem] font-bold">
+                {days.toDateString().slice(0, 10)}
+              </p>
             </div>
           </div>
         </div>
