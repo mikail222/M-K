@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MdPhoneInTalk } from "react-icons/md";
 import { RiArrowDropRightLine } from "react-icons/ri";
-// import Trending_deal from "./Trending_deal";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Flight_Deal = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   return (
-    <div className=" w-[100%] h-[15vh] ">
+    <div data-aos="fade-down" className=" w-[100%] h-[15vh] ">
       <div className=" w-[94%] h-[30%] flex flex-row justify-around items-center ml-[2rem]">
         <div className="flex flex-col justify-center items-center">
           <h3 className="text-[2.4rem] font-extrabold">

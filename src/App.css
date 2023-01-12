@@ -1,8 +1,5 @@
 #root {
-  margin: 0 auto;
-  text-align: center;
-  background-color: white;
-  width: 100%;
+  @apply w-[100%] bg-[white] text-center m-auto;
 }
 .media {
   @apply flex flex-row justify-center items-center h-[8rem] gap-[1rem] w-[40%];
@@ -14,6 +11,7 @@
   height: 8rem;
   border-top: 0.25px solid grey;
   color: gray;
+  /* @apply  w-[60%] bg-[ #0f0326] h-[8rem] border-t-[0.25px] */
 }
 .brand {
   background-image: url("./assets/abhishek-choudhary-99BE7GNmavk-unsplash.jpg");
@@ -111,9 +109,7 @@
   90% {
     left: 10800px;
   }
-  /* 95% {
-    left: 10800px;
-  } */
+
   100% {
     left: 10800px;
   }
@@ -127,13 +123,7 @@
   margin: 0px 15rem;
   @apply flex  flex-row  justify-center items-center  w-[51vw] h-[100%];
 }
-@media screen and (max-width: 480px) {
-  .image {
-    width: 100vw;
-    height: 30vh;
-    margin: 0px 0.15rem;
-  }
-}
+
 .image img {
-  @apply w-[100vw] h-[90%] object-fill items-center;
+  @apply w-[100vw] h-[90%] object-cover object-bottom items-center;
 }

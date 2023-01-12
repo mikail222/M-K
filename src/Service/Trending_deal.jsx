@@ -72,7 +72,7 @@ const Trending_deal = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" className="container">
+        <div data-aos="fade-up" className="container">
           <div className="deal">
             <div className=" mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
               <p>Top flight deal</p>
