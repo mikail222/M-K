@@ -28,12 +28,17 @@
 
 - Solution URL: (https://M-K.netlify.app)
 
+### Source of inspiration
+
+- source URL:(https://www.travelbeta.com)
+
 #### technologies
 
 - React-js
 - Atomic Design Structures
 - Tailwind CSS
 - css
+- AOS Library
 
 ### knowledge gain
 
@@ -41,6 +46,7 @@
 - better utilization of user interface
 - icons fill property
 - better utilization of tailwind css
+- better utilization of AOS library
 
 ### progressive development
 
@@ -52,3 +58,4 @@ also am able to experience how far i can stay working enthusiatically and dilige
 - react-icons
 - unsplash images
 - Tailwind liberary
+- AOS Library
