@@ -20,7 +20,7 @@
   background-position: bottom;
 }
 .details {
-  @apply w-[21%]  h-[40%] bg-[white] rounded-[5px];
+  @apply w-[26%] h-[40%] bg-[white] rounded-[3px];
 }
 .deal {
   background-image: url("./assets/pirata-studio-film-GlVr1QBPYv8-unsplash.jpg");
@@ -126,4 +126,22 @@
 
 .image img {
   @apply w-[100vw] h-[90%] object-cover object-bottom items-center;
+}
+.placeholder::placeholder {
+  @apply text-[black] text-[0.95rem] font-bold;
+}
+button:active {
+  @apply text-[white] outline-[white];
+}
+.hotel_dropdown {
+  @apply relative inline-block;
+}
+.hotel_container {
+  @apply w-[17vw] h-[40vh]  mt-[1.1rem] mr-[8%] absolute right-0 z-[1] bg-[white] rounded-[3px]  font-bold shadow-lg;
+}
+form .a {
+  @apply w-[13px] h-[15px] text-[white] flex flex-row justify-center items-center text-center font-bold text-[1rem] rounded-[50%] outline-none;
+}
+.detail {
+  @apply w-[24%] h-[40%] bg-[white] rounded-[3px];
 }
