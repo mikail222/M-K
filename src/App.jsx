@@ -20,7 +20,7 @@ function App() {
       <Services />
       <Flight_Deal />
       <Trending_deal />
-      <SlideShow />
+      {/* <SlideShow /> */}
       <Rent_vehichle />
       <Collaboration_Company />
       <Mail />

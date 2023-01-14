@@ -2,22 +2,13 @@
   @apply w-[100%] bg-[white] text-center m-auto;
 }
 .media {
-  @apply flex flex-row justify-center items-center h-[8rem] gap-[1rem] w-[40%];
-}
-
-.copyright {
-  width: 60%;
-  background-color: #0f0326;
-  height: 8rem;
-  border-top: 0.25px solid grey;
-  color: gray;
-  /* @apply  w-[60%] bg-[ #0f0326] h-[8rem] border-t-[0.25px] */
+  @apply flex flex-row justify-center items-center h-[8rem] gap-[1rem] w-[40%]   ml-[50%];
 }
 .brand {
-  background-image: url("./assets/abhishek-choudhary-99BE7GNmavk-unsplash.jpg");
+  background-image: url("https://media.istockphoto.com/id/507909158/photo/plane-wing-above-sky-and-clouds.jpg?s=612x612&w=0&k=20&c=xTiQu_P12MRoJpWE__z7sA_z76TaLdHhDBRuH9Lix-o=");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: right, center;
 }
 .details {
   @apply w-[26%] h-[40%] bg-[white] rounded-[3px];

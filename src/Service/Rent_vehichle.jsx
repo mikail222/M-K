@@ -12,7 +12,7 @@ const Rent_vehichle = () => {
       data-aos="fade-zoom-in"
       data-aos-offset="200"
       data-aos-easing="ease-in-sine"
-      className="w-[100%] h-[90vh] flex flex-row justify-center mt-[10%] "
+      className="w-[100%] h-[90vh] flex flex-row justify-center mt-[3%] "
     >
       <div className="w-[65%] flex flex-col justify-center items-center ">
         <img

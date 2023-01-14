@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
 
 const Services = () => {
   useEffect(() => {
@@ -9,9 +10,12 @@ const Services = () => {
   return (
     <div
       data-aos="fade-up"
-      className=" w-[98%] h-[40vh] flex flex-row  ml-[2%] justify-center  gap-[1rem]"
+      className=" w-[98%] h-[40vh] flex flex-row  ml-[2%] justify-center"
     >
-      <div className=" w-[25%] h-[20%] flex flex-row  gap-[1.5rem]">
+      <p className="w-[2.7%] mt-[3%] h-[14%] bg-[gray] rounded-[100%] mr-[2%] flex flex-row justify-center items-center cursor-pointer">
+        <RiArrowDropLeftLine className="w-[100%] h-[100%] text-white" />
+      </p>
+      <a href="#" className=" w-[25%] h-[20%] flex flex-row  gap-[1.5rem]">
         <img
           src="https://m.media-amazon.com/images/I/71rsagJu5tL._AC_UY500_.jpg"
           alt=""
@@ -23,8 +27,11 @@ const Services = () => {
             We offer global Baggage protection on all flights
           </p>
         </div>
-      </div>
-      <div className=" bg-white w-[25%] h-[20%] flex flex-row gap-[1.5rem]">
+      </a>
+      <a
+        href="#"
+        className=" bg-white w-[25%] h-[20%] flex flex-row gap-[1.5rem]"
+      >
         <img
           src="https://static.vecteezy.com/system/resources/thumbnails/006/978/165/small/police-cap-illustration-on-a-white-background-vector.jpg"
           alt=""
@@ -38,20 +45,26 @@ const Services = () => {
             Expedited and Smooth passage through Airport imigration
           </p>
         </div>
-      </div>
-      <div className=" bg-white w-[25%] h-[20%] flex flex-row gap-[1.5rem]">
+      </a>
+      <a
+        href="#"
+        className="3 bg-white w-[25%] h-[20%] flex flex-row gap-[1.5rem]"
+      >
         <img
           src="https://i.ibb.co/JBJQs9Z/47016de88442.png"
           alt=""
           className="w-[20%]  h-[15vh]"
         />
-        <div className="flex flex-col text-left  bg-white">
+        <div className="  flex flex-col text-left  bg-white">
           <p className="text-[1.1rem] font-extrabold">Visa Assistance</p>
-          <p className="pr-[2rem] mt-[1rem] text-[grey]">
+          <p className="pr-[1rem] mt-[1rem] text-[grey]">
             all inclusive visa assistance in a timely,and secure manner
           </p>
         </div>
-      </div>
+      </a>
+      <p className="w-[2.7%] cursor-pointer mt-[3%] h-[14%] bg-[gray] rounded-[100%] flex flex-row justify-center items-center">
+        <RiArrowDropRightLine className="w-[100%] h-[100%] text-white" />
+      </p>
     </div>
   );
 };

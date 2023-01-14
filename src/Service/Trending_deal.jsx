@@ -38,7 +38,9 @@ const Trending_deal = () => {
               className="w-[33%] h-[25px]"
             />
             <div className=" w-[40%] h-[5vh] flex flex-row gap-[0.25rem]  justify-center rounded-[3px] items-center bg-[orange]">
-              <p className="text-[0.85rem] font-extrabold">Book now</p>
+              <a href="#" className="text-[0.85rem] font-extrabold">
+                Book now
+              </a>
               <RiArrowDropRightLine className="fill-white w-[25px] h-[35px]" />
             </div>
           </div>
@@ -67,7 +69,9 @@ const Trending_deal = () => {
               className="w-[33%] h-[25px]"
             />
             <div className=" w-[40%] h-[5vh] flex flex-row gap-[0.25rem]  justify-center rounded-[3px] items-center bg-[orange]">
-              <p className="text-[0.85rem] font-extrabold">Book now</p>
+              <a href="#" className="text-[0.85rem] font-extrabold">
+                Book now
+              </a>
               <RiArrowDropRightLine className="fill-white w-[25px] h-[35px]" />
             </div>
           </div>
@@ -97,7 +101,9 @@ const Trending_deal = () => {
               className="w-[33%] h-[25px]"
             />
             <div className=" w-[40%] h-[5vh] flex flex-row gap-[0.25rem]  justify-center rounded-[3px] items-center bg-[orange]">
-              <p className="text-[0.85rem] font-extrabold">Book now</p>
+              <a href="#" className="text-[0.85rem] font-extrabold">
+                Book now
+              </a>
               <RiArrowDropRightLine className="fill-white w-[25px] h-[35px]" />
             </div>
           </div>
@@ -105,7 +111,7 @@ const Trending_deal = () => {
       </div>
       <div className=" w-[100%] h-[10vh] text-right text-[#0827b1] flex flex-row gap-[0.5rem] mt-[2rem] justify-center items-center ">
         <a href="http://#" className=" ml-[60%]">
-          <p className="text-[0.85rem] font-extrabold">View More detail</p>
+          <p className="text-[0.85rem] font-extrabold">View More details</p>
         </a>
         <RiArrowDropRightLine className="fill-green w-[25px] h-[35px]" />
       </div>

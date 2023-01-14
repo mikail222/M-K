@@ -19,7 +19,10 @@ const Flight_Deal = () => {
             Get the best flight deals, airline specials and promotions
           </p>
         </div>
-        <div className="w-[15%] h-[9.5vh] rounded-[5px] bg-[#128c7e] flex flex-row items-center  gap-[0.75rem] justify-center  pl-[7px]">
+        <a
+          href="http://#"
+          className="w-[15%] h-[9.5vh] rounded-[5px] bg-[#128c7e] flex flex-row items-center  gap-[0.75rem] justify-center  pl-[7px]"
+        >
           <div className="w-[40px] h-[35px] rounded-[100%] bg-[#5fb042] border-[white] border-[2px] ml-[1rem] flex  flex-row items-center justify-center ">
             <MdPhoneInTalk className=" w-[20px] h-[25px] fill-white " />
           </div>
@@ -27,7 +30,7 @@ const Flight_Deal = () => {
             <p className="text-[0.85rem] font-extrabold">Need Help?</p>
             <p className="text-[0.75rem]">Click to get in touch.</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
