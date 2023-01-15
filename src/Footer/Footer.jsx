@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="flex flex-col  text-left leading-[2rem]">
             <p className=" text-[1.5rem] font-bold">𝔐&𝔨</p>
             <a href="https://#">About us</a>
-            <a href="https://#">Contact</a>
+            <a href="https://#">Contact us</a>
             <a href="https://#">Feedback</a>
           </div>
         </div>
