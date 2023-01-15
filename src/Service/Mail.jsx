@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import speaker from "../assets/—Pngtree—vector speaker icon_3779063.png";
 
 const Mail = () => {
   useEffect(() => {
@@ -20,13 +21,13 @@ const Mail = () => {
   return (
     <div
       data-aos="fade-up"
-      className=" mail border-[#d1a9db] w-[100%] h-[40vh] flex flex-row  items-center"
+      className="bg-[#d7e7ff] mail border-[#d1a9db] w-[100%] h-[40vh] flex flex-row  items-center"
     >
-      <div className="flex flex-row w-[40%] ml-[10%]">
+      <div className="flex flex-row w-[40%] ml-[13%]">
         <img
-          src="https://images.pond5.com/blue-color-hand-speaker-wave-footage-164461718_iconl.jpeg"
+          src={speaker}
           alt=""
-          className="w-[35%] h-[24vh]"
+          className="w-[20%] mt-[2%] origin-bottom rotate-[-28deg] h-[17vh]"
         />
         <div className=" text-[1.3rem] font-bold text-left mt-[6%] ">
           <p>Want to get the latest </p>
