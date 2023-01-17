@@ -23,7 +23,7 @@ const Hotel_Dropdown = ({
             <div className="flex flex-row-reverse gap-[1.5rem]  items-center">
               <button
                 type="button"
-                className="a bg-[#01004d]"
+                className="sign bg-[#01004d]"
                 onClick={(e) => setAdult((p) => (!p ? 1 : p + 1))}
               >
                 +
@@ -31,7 +31,7 @@ const Hotel_Dropdown = ({
               <p className="text-[0.75rem]">{adult}</p>
               <button
                 type="button"
-                className="a bg-[gray]"
+                className="sign bg-[gray]"
                 onClick={(e) => setAdult((d) => (!d ? 1 : d - 1))}
               >
                 -
@@ -46,7 +46,7 @@ const Hotel_Dropdown = ({
             <div className="flex flex-row-reverse items-center gap-[1.5rem]">
               <button
                 type="button"
-                className="a bg-[#01004d]"
+                className="sign bg-[#01004d]"
                 onClick={(e) => setChildren((p) => p + 1)}
               >
                 +
@@ -54,7 +54,7 @@ const Hotel_Dropdown = ({
               <p className="text-[0.75rem]">{children}</p>
               <button
                 type="button"
-                className="a bg-[gray]"
+                className="sign bg-[gray]"
                 onClick={(e) => setChildren((d) => (!d ? 0 : d - 1))}
               >
                 <p className="text-[1rem]">-</p>

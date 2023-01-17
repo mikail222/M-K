@@ -8,7 +8,7 @@ import { RiArrowDropRightLine } from "react-icons/ri";
 const Flight = () => {
   const day = new Date();
   const departure = new Date();
-  const returnDate = day.setDate(day.getDate() + 3);
+  day.setDate(day.getDate() + 3);
   const [city, setCity] = useState(" ");
   const handleClick = (e) => {
     e.preventDefault();
@@ -20,7 +20,6 @@ const Flight = () => {
     e.target.reset();
   };
 
-  console.log(returnDate);
   return (
     <div>
       {" "}

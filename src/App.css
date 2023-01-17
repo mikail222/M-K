@@ -130,9 +130,15 @@ button:active {
 .hotel_container {
   @apply w-[17vw] h-[40vh]  mt-[1.1rem] mr-[8%] absolute right-0 z-[1] bg-[white] rounded-[3px]  font-bold shadow-lg;
 }
+.flight_container {
+  @apply w-[17vw] h-[40vh]  mt-[1.1rem] ml-[18%] absolute left-0 z-[1] bg-[white] rounded-[5px]  font-bold shadow-lg;
+}
 form .a {
   @apply w-[13px] h-[15px] text-[white] flex flex-row justify-center items-center text-center font-bold text-[1rem] rounded-[50%] outline-none;
 }
 .detail {
   @apply w-[24%] h-[40%] bg-[white] rounded-[3px];
+}
+.sign {
+  @apply text-white rounded-[100%] flex flex-row justify-center items-center h-[17px] w-[15px] focus:outline-none;
 }

@@ -11,10 +11,41 @@ import Hotel from "./Hotel";
 import Flight_Dropdown from "./Flight_Dropdown";
 
 const Brand = () => {
-  const [count, setCount] = useState(1);
   const [allCountries, setAllCountries] = useState([]);
   const [flightDetails, setFlightDetails] = useState(true);
   const [hotelDetails, setHotelDetails] = useState(true);
+  const [booking, setBooking] = useState(false);
+  const [totalPassanger, setTotalpassanger] = useState(1);
+  const [economy, setEconomy] = useState();
+  const [firstClass, setFirstclass] = useState();
+  const [business, setBusiness] = useState();
+  const [premium, setPremium] = useState();
+  const [display, setDisplay] = useState([
+    economy,
+    firstClass,
+    business,
+    premium,
+  ]);
+
+  const toggleClass = () => {
+    switch (display) {
+      case economy:
+        setEconomy("Economy");
+        break;
+      case firstClass:
+        setFirstclass("First Class");
+        break;
+      case business:
+        setBusiness("Business Class");
+        break;
+      case premium:
+        setPremium("Premium Economy");
+        break;
+      default:
+        break;
+    }
+  };
+
   useEffect(() => {
     axios.get("https://restcountries.com/v3.1/all").then((response) => {
       setAllCountries(response.data);
@@ -48,7 +79,7 @@ const Brand = () => {
             <div className="w-[100%] h-[30%] flex flex-row items-center justify-between bg-white ">
               <div className=" w-[60%] flex flex-row ml-[2rem]">
                 <button
-                  className="flex flex-row justify-center  items-center gap-[0.5rem] outline-1 border-[#01004d] rounded-[3px] w-[20%] p-[6px] "
+                  className="flex flex-row justify-center items-center gap-[0.5rem] focus:outline-1 border-[#01004d] rounded-[3px] w-[20%] p-[6px] "
                   onClick={(e) =>
                     setHotelDetails(false) || setFlightDetails(true)
                   }
@@ -59,7 +90,7 @@ const Brand = () => {
                   </p>
                 </button>
                 <button
-                  className="w-[8rem] flex flex-row gap-[0.5rem] justify-center items-center ml-[1rem]  outline-1  outline-[#0f0326] "
+                  className="w-[8rem] flex flex-row gap-[0.5rem] justify-center items-center ml-[1rem]  focus:outline-1  outline-[#0f0326] "
                   onClick={(e) =>
                     setFlightDetails(false) || setHotelDetails(true)
                   }
@@ -82,20 +113,39 @@ const Brand = () => {
                   <p className="text-[0.75rem] text-white">Round Trip</p>
                   <IoMdArrowDropdown className="fill-white" />
                 </div>
-                <div className="flex flex-row gap-[0.45rem] items-center">
-                  <BsFillPersonFill className="fill-white" />
-                  <p className="text-[0.75rem]  text-white">{count}</p>
 
+                <button
+                  onClick={(e) => setBooking(true)}
+                  type="button"
+                  className="flex flex-row gap-[0.45rem] outline-none items-center"
+                >
+                  <BsFillPersonFill className="fill-white" />
+                  <p className="text-[0.75rem]  text-white">{totalPassanger}</p>
+                  <IoMdArrowDropdown className="fill-white" />{" "}
+                </button>
+                {booking ? (
+                  <Flight_Dropdown
+                    setTotalpassanger={setTotalpassanger}
+                    setBooking={setBooking}
+                  />
+                ) : (
+                  ""
+                )}
+
+                <button className="flex flex-row gap-[0.45rem] items-center">
+                  {/* <div className="flight_container  mt-[20%]"> */}
+                  <div>
+                    {display.map((x, i) => (
+                      <div key={i}>
+                        <p>{console.log(x)}</p>
+                      </div>
+                    ))}
+                  </div>
                   <IoMdArrowDropdown className="fill-white" />
-                  {/* <Flight_Dropdown className="bg-[blue]" /> */}
-                </div>
-                <div className="flex flex-row gap-[0.45rem] items-center">
-                  <p className="text-[0.85rem] text-white">Economy</p>
-                  <IoMdArrowDropdown className="fill-white" />
-                </div>
+                </button>
               </div>
             ) : (
-              <p className="w-[100%]  h-[6vh]"></p>
+              <p className="w-[100%] h-[6vh]"></p>
             )}
             {flightDetails ? <Flight /> : hotelDetails ? <Hotel /> : ""}
           </div>
