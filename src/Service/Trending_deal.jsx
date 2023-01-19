@@ -13,13 +13,13 @@ const Trending_deal = () => {
   const returnDate = day.setDate(day.getDate() + 8);
   return (
     <div>
-      <div className=" w-[70%] h-[50vh] flex flex-row gap-[1rem] ml-[12rem]">
+      <div className="sm:flex-col justify-center  items-center  lg:w-[70%] h-[50vh] lg:flex flex-row gap-[1rem] lg:ml-[12rem]">
         <div data-aos="fade-up" className="container">
           <div className="deal">
-            <div className=" mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
+            <div className="sm:text-[0.75rem] lg:mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
               <p>Top flight deal</p>
             </div>
-            <div className="ml-[1.5rem] text-[1.2rem] font-extrabold text-[white] w-[10%]">
+            <div className=" sm:ml-[3rem] lg:ml-[1.5rem] text-[1.2rem] font-extrabold text-[white] w-[10%]">
               <p>Lagos</p>
               <TbArrowNarrowDown className="w-[25px] h-[25px]" />
               <p>London</p>

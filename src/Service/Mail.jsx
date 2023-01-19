@@ -21,18 +21,22 @@ const Mail = () => {
   return (
     <div
       data-aos="fade-up"
-      className="bg-[#d7e7ff] mail border-[#d1a9db] w-[100%] h-[40vh] flex flex-row  items-center"
+      className="bg-[#d7e7ff] mail border-[#d1a9db] w-[100%] lg:h-[40vh] lg:flex lg:flex-row "
     >
-      <div className="flex flex-row w-[40%] ml-[13%]">
-        <img
-          src={speaker}
-          alt=""
-          className="w-[20%] mt-[2%] origin-bottom rotate-[-28deg] h-[17vh]"
-        />
-        <div className=" text-[1.3rem] font-bold text-left mt-[6%] ">
-          <p>Want to get the latest </p>
-          <p> travel news and deals?</p>
-          <p className="w-[90%] text-[0.75rem] mt-[0.5rem] text-[grey] leading-[14px] font-thin">
+      <div className=" flex-col justify-center  items-center  lg:flex lg:flex-row lg:w-[40%] lg:ml-[13%]">
+        <div className="flex flex-col justify-center items-center lg:w-[20%]">
+          <img
+            src={speaker}
+            alt=""
+            className=" object-contain w-[9rem] lg:w-[30rem] mt-[2%] lg:origin-bottom rotate-[-28deg] lg:h-[17vh]"
+          />
+        </div>
+        <div className=" w-[100%] text-center lg:text-[1.3rem] font-bold lg:text-left mt-[6%] ">
+          <p className="lg:w-[60%]">
+            Want to get the latest travel news and deals?
+          </p>
+
+          <p className="lg:w-[90%] text-[0.75rem] mt-[0.5rem] text-[grey] leading-[14px] font-thin">
             Enter your email and we'll send them your way.
           </p>
         </div>
@@ -40,17 +44,17 @@ const Mail = () => {
 
       <form
         onSubmit={handleClick}
-        className="w-[45%] flex flex-row gap-[0.5rem]"
+        className="flex flex-col ml-[1rem] lg:w-[45%] lg:flex lg:flex-row gap-[0.5rem] lg:items-center"
       >
         <input
           type="text"
           name="mail"
           placeholder="Your email..."
-          className="w-[60%] h-[9vh] pl-[30px] bg-[lightgrey] outline-none rounded-[3px]"
+          className="w-[95%] lg:w-[60%] h-[10vh] pl-[30px] bg-white outline-none rounded-[3px]"
         />
         <button
           type="submit"
-          className="w-[24%] rounded-[3px] h-[9vh] bg-[orange] outline-none text-[white]"
+          className="w-[12rem] lg:w-[24%] rounded-[3px] h-[10vh] bg-[orange] outline-none text-[white]"
         >
           Subscribe
         </button>

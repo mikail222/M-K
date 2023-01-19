@@ -16,42 +16,56 @@ const Brand = () => {
   const [hotelDetails, setHotelDetails] = useState(true);
   const [booking, setBooking] = useState(false);
   const [totalPassanger, setTotalpassanger] = useState(1);
-  const [economy, setEconomy] = useState();
-  const [firstClass, setFirstclass] = useState();
-  const [business, setBusiness] = useState();
-  const [premium, setPremium] = useState();
-  const [display, setDisplay] = useState([
-    economy,
-    firstClass,
-    business,
-    premium,
-  ]);
+  const [selecDisplay, setSelectDisplay] = useState(null);
+  // const [display, setDisplay] = useState([
+  //   {
+  //     title: "Economy",
+  //     content: "Economy1",
+  //     id: 1,
+  //   },
+  //   {
+  //     title: "Premium Economy",
+  //     content: "Premium  Economy2",
+  //     id: 2,
+  //   },
+  //   {
+  //     title: "Business Class",
+  //     content: "Business Class3",
+  //     id: 3,
+  //   },
+  //   {
+  //     title: "First Class",
+  //     content: " First Class4",
+  //     id: 4,
+  //   },
+  // ]);
+  const [isActive, setIsactive] = useState();
 
-  const toggleClass = () => {
-    switch (display) {
-      case economy:
-        setEconomy("Economy");
-        break;
-      case firstClass:
-        setFirstclass("First Class");
-        break;
-      case business:
-        setBusiness("Business Class");
-        break;
-      case premium:
-        setPremium("Premium Economy");
-        break;
-      default:
-        break;
-    }
-  };
+  // const menu = display.map((title) => title.title);
+  // console.log(menu)
 
-  useEffect(() => {
-    axios.get("https://restcountries.com/v3.1/all").then((response) => {
-      setAllCountries(response.data);
-    });
-  }, []);
-  console.log(allCountries);
+  // const handleClick = (e) => {
+  //   switch (display) {
+  //     case economy:
+  //       console.log("Economy");
+  //       e.target.className = "text-[blue]";
+  //       break;
+  //     case firstClass:
+  //       console.log("First Class");
+  //       e.target.className = "text-[blue]";
+  //       break;
+  //     case business:
+  //       console.log("Business Class");
+  //       e.target.className = "text-[blue]";
+  //       break;
+  //     case premium:
+  //       console.log("Premium Economy");
+  //       e.target.className = "text-[blue]";
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  // };
 
   const filteredCountry = allCountries.filter(({ capital, flags }) => {
     capital, flags;
@@ -68,25 +82,26 @@ const Brand = () => {
     i++;
     setTimeout("changeImg()", 1000);
   };
+
   return (
-    <div className="w-[100%] h-[100vh]">
-      <div className="brand flex flex-col justify-center items-center w-[100%] h-[50vh]">
-        <div className="w-[90%] h-[25vh] mt-[15rem] ">
-          <h1 className="text-[4rem] text-[white] flex flex-row justify-left items-left mb-[1.7rem] tracking-[5px] font-extrabold">
+    <div className="lg:w-[100%] lg:h-[100vh]">
+      <div className="brand lg:flex flex-col lg:justify-center lg:items-center w-[100%] lg:h-[50vh]">
+        <div className="lg:w-[90%] lg:h-[25%] lg:mt-[15rem] ">
+          <h1 className="hidden text-[4rem] text-[white] lg:flex flex-row justify-left items-left mb-[1.7rem] tracking-[5px] font-extrabold">
             𝐆𝐨𝐢𝐧𝐠 s𝐨𝐦𝐞𝐰𝐡𝐞𝐫𝐞?
           </h1>
-          <div className="w-[100%] h-[37vh] bg-[#01004d] ">
-            <div className="w-[100%] h-[30%] flex flex-row items-center justify-between bg-white ">
-              <div className=" w-[60%] flex flex-row ml-[2rem]">
+          <div className="w-[100%] h-[100%] lg:w-[100%] lg:h-[45vh] bg-[#01004d] ">
+            <div className="flex flex-col lg:h-[30%] lg:flex lg:flex-row items-center justify-between bg-white ">
+              <div className="bg-[#f2f2ff] lg:bg-white w-[100%] h-[10vh] lg:w-[60%] flex flex-row justify-center items-center lg:ml-[0.5rem]">
                 <button
-                  className="flex flex-row justify-center items-center gap-[0.5rem] focus:outline-1 border-[#01004d] rounded-[3px] w-[20%] p-[6px] "
+                  className="flex flex-row justify-center items-center gap-[0.5rem] lg:focus:outline-1 border-[#01004d] rounded-[3px] w-[20%] p-[6px] "
                   onClick={(e) =>
                     setHotelDetails(false) || setFlightDetails(true)
                   }
                 >
-                  <RiPlaneFill className="fill-[#0f0326] " />{" "}
-                  <p className="text-[#0f0326]  text-[1rem] font-bold">
-                    Flights
+                  <RiPlaneFill className="fill-[#0f0326] w-[15px] h-[20px]" />{" "}
+                  <p className="text-[#0f0326]  text-[0.90rem] font-bold">
+                    FLIGHTS
                   </p>
                 </button>
                 <button
@@ -95,11 +110,13 @@ const Brand = () => {
                     setFlightDetails(false) || setHotelDetails(true)
                   }
                 >
-                  <MdHome className="fill-[black]" />
-                  <p className="text-[black] text-[1rem] font-bold">Hotels</p>
+                  <MdHome className="fill-[black] w-[15px] h-[20px]" />
+                  <p className="text-[black] text-[0.90rem] font-bold">
+                    HOTELS
+                  </p>
                 </button>
               </div>
-              <div className=" w-[22%] flex flex-row  items-center gap-[1rem] ">
+              <div className="sm:hidden md:hidden w-[22%] flex flex-row  items-center gap-[1rem] ">
                 <IoMdCheckmarkCircleOutline className="fill-[orange] " />
                 <p className="  text-[#0f0326] text-[0.75rem] ">
                   We offer the best deals in the industry!
@@ -107,7 +124,7 @@ const Brand = () => {
               </div>
             </div>
             {flightDetails ? (
-              <div className="w-[100%] h-[20%] flex flex-row gap-[2rem] items-center">
+              <div className="  lg:w-[100%] h-[20%] flex flex-row gap-[2rem] items-center">
                 <div className="flex flex-row gap-[0.5rem] items-center ml-[3rem] cursor-pointer">
                   <RiArrowLeftRightFill className="fill-white" />
                   <p className="text-[0.75rem] text-white">Round Trip</p>
@@ -132,17 +149,20 @@ const Brand = () => {
                   ""
                 )}
 
-                <button className="flex flex-row gap-[0.45rem] items-center">
-                  {/* <div className="flight_container  mt-[20%]"> */}
-                  <div>
-                    {display.map((x, i) => (
-                      <div key={i}>
-                        <p>{console.log(x)}</p>
-                      </div>
-                    ))}
-                  </div>
+                <div className="flex flex-row gap-[0.45rem] items-center">
+                  {/* {display.map((title, id) => (
+                    <div
+                      key={title.title}
+                      className="flight_container  mt-[20%]"
+                    >
+                      <button onClick={() => setSelectDisplay(display)}>
+                        {title.title}
+                      </button>
+                    </div>
+                  ))} */}
+                  <p className="text-white">Economy</p>
                   <IoMdArrowDropdown className="fill-white" />
-                </button>
+                </div>
               </div>
             ) : (
               <p className="w-[100%] h-[6vh]"></p>

@@ -10,9 +10,9 @@ const Flight_Deal = () => {
   }, []);
   return (
     <div data-aos="fade-down" className=" w-[100%] h-[15vh] ">
-      <div className=" w-[94%] h-[30%] flex flex-row justify-around items-center ml-[2rem]">
+      <div className="sm:flex-col w-[94%] h-[30%] flex flex-row justify-around items-center ml-[2rem]">
         <div className="flex flex-col justify-center items-center">
-          <h3 className="text-[2.4rem] font-extrabold">
+          <h3 className="sm:text-[1.6rem] lg:text-[2.4rem] font-extrabold">
             Trending Flight Deals
           </h3>
           <p className="text-[grey] mt-[0.5rem]">
@@ -21,9 +21,9 @@ const Flight_Deal = () => {
         </div>
         <a
           href="http://#"
-          className="w-[15%] h-[9.5vh] rounded-[5px] bg-[#128c7e] flex flex-row items-center  gap-[0.75rem] justify-center  pl-[7px]"
+          className="sm:w-[100%] sm:flex sm:flex-row sm:justify-center sm:items-center lg:w-[15%] lg:h-[9.5vh] rounded-[5px] bg-[#128c7e] flex flex-row items-center  gap-[0.75rem] justify-center  pl-[7px]"
         >
-          <div className="w-[40px] h-[35px] rounded-[100%] bg-[#5fb042] border-[white] border-[2px] ml-[1rem] flex  flex-row items-center justify-center ">
+          <div className=" lg:w-[40px] h-[35px] rounded-[100%] bg-[#5fb042] border-[white] border-[2px] ml-[1rem] flex  flex-row items-center justify-center ">
             <MdPhoneInTalk className=" w-[20px] h-[25px] fill-white " />
           </div>
           <div className=" w-[75%] text-[white] flex flex-col text-left">

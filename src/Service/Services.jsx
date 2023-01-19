@@ -10,12 +10,12 @@ const Services = () => {
   return (
     <div
       data-aos="fade-up"
-      className=" w-[98%] h-[40vh] flex flex-row  ml-[2%] justify-center"
+      className="sm:overflow-auto float-left  w-[80vw] lg:w-[98%] h-[40vh] flex flex-row  ml-[2%] justify-center"
     >
-      <p className="w-[2.7%] mt-[3%] h-[14%] bg-[gray] rounded-[100%] mr-[2%] flex flex-row justify-center items-center cursor-pointer">
+      <p className=" sm:hidden w-[2.7%] mt-[3%] h-[14%] bg-[gray] rounded-[100%] mr-[2%] flex flex-row justify-center items-center cursor-pointer">
         <RiArrowDropLeftLine className="w-[100%] h-[100%] text-white" />
       </p>
-      <a href="#" className=" w-[25%] h-[20%] flex flex-row  gap-[1.5rem]">
+      <a href="#" className="sm: w-[100%] h-[20%] flex flex-row  gap-[1.5rem]">
         <img
           src="https://m.media-amazon.com/images/I/71rsagJu5tL._AC_UY500_.jpg"
           alt=""
@@ -30,7 +30,7 @@ const Services = () => {
       </a>
       <a
         href="#"
-        className=" bg-white w-[25%] h-[20%] flex flex-row gap-[1.5rem]"
+        className="sm: bg-white w-[100%] h-[20%] flex flex-row gap-[1.5rem]"
       >
         <img
           src="https://static.vecteezy.com/system/resources/thumbnails/006/978/165/small/police-cap-illustration-on-a-white-background-vector.jpg"
@@ -48,7 +48,7 @@ const Services = () => {
       </a>
       <a
         href="#"
-        className="3 bg-white w-[25%] h-[20%] flex flex-row gap-[1.5rem]"
+        className="sm: bg-white w-[25%] h-[20%] flex flex-row gap-[1.5rem]"
       >
         <img
           src="https://i.ibb.co/JBJQs9Z/47016de88442.png"
@@ -62,7 +62,7 @@ const Services = () => {
           </p>
         </div>
       </a>
-      <p className="w-[2.7%] cursor-pointer mt-[3%] h-[14%] bg-[gray] rounded-[100%] flex flex-row justify-center items-center">
+      <p className=" sm:hidden w-[2.7%] cursor-pointer mt-[3%] h-[14%] bg-[gray] rounded-[100%] flex flex-row justify-center items-center">
         <RiArrowDropRightLine className="w-[100%] h-[100%] text-white" />
       </p>
     </div>

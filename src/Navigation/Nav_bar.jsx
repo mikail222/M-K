@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { MdOutlineClear } from "react-icons/md";
+import { RiArrowDropRightLine } from "react-icons/ri";
 
 const Nav_bar = () => {
+  const [show, setShow] = useState(false);
   const nav = [
     "Hotel",
     "Dubai visa",
     "Vacation packages",
-    "Become an afilation",
+    "Become an afillation",
   ];
-
+  const mobile_nav = [
+    "Dubai visa",
+    "Vacation packages",
+    "Become an afillation",
+    "Login",
+    "Create Account",
+  ];
+  let menu;
   return (
     <div>
-      <div className="bg-[white] cursor-pointer w-[100%] h-[16vh] flex flex-row items-center justify-between overflow-hidden">
+      <div className=" sm:hidden bg-[white] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between overflow-hidden">
         <div>
           <a
             href="#"
@@ -44,6 +55,55 @@ const Nav_bar = () => {
             Create account
           </a>
         </div>
+      </div>
+      <div className="menuBar lg:hidden  bg-white ">
+        {show ? (
+          <div className=" md:flex flex-col w-[95%] h-[100vh]">
+            <div className="flex flex-row  justify-between mt-[5%]">
+              <a
+                href="#"
+                className="text-[2rem]  font-extrabold text-[#020180] ml-[1rem] "
+              >
+                𝔐&𝔨 𝔗𝔯𝔞𝔳𝔢𝔩𝔰 & 𝔗𝔬𝔲𝔯
+              </a>
+              <MdOutlineClear
+                title="Menu Bar"
+                onClick={(e) => setShow(!show)}
+                className="w-[35px] h-[35px]"
+              />
+            </div>
+            <div className="flex flex-col text-left mt-[8%] ml-[1rem]">
+              {mobile_nav.map((x, i) => (
+                <div key={i} className="flex flex-row justify-between">
+                  <a
+                    href="http://#"
+                    className="outline-none rounded-[20%] text-[1.4rem] font-thin p-[0.95rem]"
+                  >
+                    {x}
+                  </a>
+                  <a href="http://#" target="_blank" rel="noopener noreferrer">
+                    {" "}
+                    <RiArrowDropRightLine className="w-[30px] h-[35px]" />
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="flex flex-row w-[95%] h-[15vh] bg-white justify-between items-center ">
+            <a
+              href="#"
+              className="sm:text-[1.5rem] md:text-[2rem] font-extrabold text-[#020180] ml-[1rem] "
+            >
+              𝔐&𝔨 𝔗𝔯𝔞𝔳𝔢𝔩𝔰 & 𝔗𝔬𝔲𝔯
+            </a>
+            <RxHamburgerMenu
+              title="Menu Bar"
+              onClick={(e) => setShow(!show)}
+              className="w-[30px] h-[25px]"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
