@@ -15,8 +15,8 @@ const Hotel = () => {
 
   return (
     <div>
-      <div className="w-[100%] h-[30vh] flex flex-row gap-[0.25rem]  justify-center mt-[1rem]">
-        <div className="details flex flex-row gap-[1rem] justify-start  items-center">
+      <div className="w-[100%] mt-[3%] ml-[5%] gap-[1.5rem] lg:ml-0 lg:h-[30vh] flex  flex-col lg:flex-row lg:gap-[0.25rem]  lg:justify-center lg:mt-[1rem]">
+        <div className="detail lg:details flex flex-row gap-[1rem] lg:justify-start  items-center">
           <BiHotel className="fill-[lightgray] w-[25px] h-[25px] ml-[1rem]" />
           <form className="flex flex-col justify-center items-center">
             <label htmlFor="" className="text-[grey] text-[0.75rem] mr-[9rem]">
@@ -29,9 +29,9 @@ const Hotel = () => {
             />
           </form>
         </div>
-        <div className="details flex flex-row gap-[0.65rem] justify-start items-center">
+        <div className=" detail lg:details flex flex-row lg:gap-[0.65rem] lg:justify-start items-center">
           <BsFillPersonFill className="fill-[lightgray] w-[20px] h-[25px] ml-[1rem]" />
-          <form className="flex flex-col justify-center items-center">
+          <form className="flex flex-col lg:justify-center items-center">
             <label htmlFor="" className="text-[grey] text-[0.75rem] mr-[6rem] ">
               Rooms and guests
             </label>
@@ -60,8 +60,8 @@ const Hotel = () => {
             </div>
           </form>
         </div>
-        <div className="w-[27%] h-[40%] flex flex-row justify-center  items-center gap-[2rem] bg-white  rounded-[3px]">
-          <div className="w-[50%] flex flex-row gap-[1rem] justify-center items-center ml-[1rem] ">
+        <div className="w-[90%] h-[12vh] lg:w-[27%] lg:h-[40%] flex flex-row justify-center  items-center gap-[2rem] bg-white  rounded-[3px]">
+          <div className="w-[50%] flex flex-row gap-[1rem] lg:justify-center items-center ml-[1rem] ">
             <FcCalendar className="w-[20px] h-[20px]" />
             <div className="flex flex-col justify-center items-center p-[10px]">
               <p className="text-[grey] text-[0.75rem]">Check-in</p>
@@ -71,7 +71,7 @@ const Hotel = () => {
             </div>
           </div>
 
-          <div className="w-[50%] flex flex-row gap-[1rem] justify-center items-center mr-[1rem]">
+          <div className="w-[50%] flex flex-row gap-[1rem] lg:justify-center items-center mr-[1rem]">
             <FcCalendar className="w-[20px] h-[20px]" />
             <div className="flex flex-col justify-center items-center p-[10px]">
               <p className="text-[grey] text-[0.75rem] mr-[0.5rem]">
@@ -85,7 +85,7 @@ const Hotel = () => {
         </div>
         <a
           href="https://#"
-          className="w-[15%] h-[40%] rounded-[5px] bg-[orange] flex flex-row justify-center  items-center"
+          className="w-[90%] h-[12vh] lg:w-[15%] lg:h-[40%] rounded-[5px] bg-[orange] flex flex-row justify-center  items-center"
         >
           <p className="text-white">Search Hotel</p>
           <RiArrowDropRightLine className="fill-white ml-[1.2rem] w-[25px] h-[35px]" />

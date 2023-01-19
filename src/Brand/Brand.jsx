@@ -84,7 +84,7 @@ const Brand = () => {
   };
 
   return (
-    <div className="lg:w-[100%] lg:h-[100vh]">
+    <div className="mt-[6.5rem] w-[100%] h-[100vh] overflow-hidden lg:w-[100%] lg:h-[100vh]">
       <div className="brand lg:flex flex-col lg:justify-center lg:items-center w-[100%] lg:h-[50vh]">
         <div className="lg:w-[90%] lg:h-[25%] lg:mt-[15rem] ">
           <h1 className="hidden text-[4rem] text-[white] lg:flex flex-row justify-left items-left mb-[1.7rem] tracking-[5px] font-extrabold">
@@ -124,7 +124,7 @@ const Brand = () => {
               </div>
             </div>
             {flightDetails ? (
-              <div className="  lg:w-[100%] h-[20%] flex flex-row gap-[2rem] items-center">
+              <div className=" hidden lg:w-[100%] h-[20%] lg:flex flex-row gap-[2rem] items-center">
                 <div className="flex flex-row gap-[0.5rem] items-center ml-[3rem] cursor-pointer">
                   <RiArrowLeftRightFill className="fill-white" />
                   <p className="text-[0.75rem] text-white">Round Trip</p>
@@ -168,6 +168,12 @@ const Brand = () => {
               <p className="w-[100%] h-[6vh]"></p>
             )}
             {flightDetails ? <Flight /> : hotelDetails ? <Hotel /> : ""}
+            <div className="details w-[90%] h-[12vh] bg-[transparent] lg:hidden lg:w-[22%] flex flex-row  justify-center items-center gap-[1rem] ">
+              <IoMdCheckmarkCircleOutline className="fill-[orange] " />
+              <p className="text-white  lg:text-[#0f0326] text-[0.75rem] ">
+                We offer the best deals in the industry!
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const Nav_bar = () => {
   let menu;
   return (
     <div>
-      <div className=" sm:hidden bg-[white] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between overflow-hidden">
+      <div className=" hidden bg-[white] fixed top-0  w-[100%] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between overflow-hidden">
         <div>
           <a
             href="#"

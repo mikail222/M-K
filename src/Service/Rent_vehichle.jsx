@@ -12,13 +12,13 @@ const Rent_vehichle = () => {
       data-aos="fade-zoom-in"
       data-aos-offset="200"
       data-aos-easing="ease-in-sine"
-      className="sm:w-[100vw] sm:flex-col lg:w-[100%] h-[90vh] flex lg:flex-row justify-center mt-[3%] "
+      className="flex-col lg:w-[100%] mt-[10rem] h-[100vh] lg:h-[90vh] flex lg:flex-row justify-center lg:mt-[3%] "
     >
-      <div className=" sm:w-[100vw] lg:w-[65%] flex flex-col justify-center items-center ">
+      <div className="w-[50vw] h-[90vh]  lg:w-[65%] flex flex-col justify-center items-center ">
         <img
           src="https://www.abettervaluecarhire.com.au/wp-content/uploads/2022/05/2014-2015-8-Seat-Hyundai-Imax-Auto.jpg"
           alt=""
-          className="sm:w-[90%] lg:w-[90%] h-[90%] mt-[4rem]"
+          className="w-[50%] lg:w-[80%] lg:h-[90%] lg:mt-[4rem]"
         />
       </div>
       <div className=" sm:w-[90vw] sm:text-center ml-[1.3rem] lg:w-[30%] flex flex-col justify-left items-left text-left">

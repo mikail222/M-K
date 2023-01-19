@@ -17,13 +17,13 @@ function App() {
     <div className="App">
       <Nav_bar />
       <Brand />
-      {/* <Services /> */}
-      {/* <Flight_Deal /> */}
-      {/* <Trending_deal /> */}
+      <Services />
+      <Flight_Deal />
+      <Trending_deal />
       {/* cmout<SlideShow /> */}
-      {/* d<Rent_vehichle /> */}
-      {/* d<Collaboration_Company /> */}
-      {/* d<Mail /> */}
+      <Rent_vehichle />
+      <Collaboration_Company />
+      <Mail />
       {/* <Footer /> */}
     </div>
   );

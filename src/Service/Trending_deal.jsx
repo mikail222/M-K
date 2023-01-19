@@ -12,11 +12,11 @@ const Trending_deal = () => {
   const departure = new Date();
   const returnDate = day.setDate(day.getDate() + 8);
   return (
-    <div>
-      <div className="sm:flex-col justify-center  items-center  lg:w-[70%] h-[50vh] lg:flex flex-row gap-[1rem] lg:ml-[12rem]">
-        <div data-aos="fade-up" className="container">
+    <div className="flex flex-col">
+      <div className=" flex flex-col justify-center items-center  h-[40vh] lg:w-[70%] lg:h-[50vh] lg:flex lg:flex-row lg:gap-[1rem] lg:ml-[12rem]">
+        <div className="container">
           <div className="deal">
-            <div className="sm:text-[0.75rem] lg:mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
+            <div className="text-[0.75rem] lg:mr-[0.5rem] bg-[white] m-[0.5rem] justify-center rounded-[3px] lg:text-[0.87rem] text-[blue] w-[40%]">
               <p>Top flight deal</p>
             </div>
             <div className=" sm:ml-[3rem] lg:ml-[1.5rem] text-[1.2rem] font-extrabold text-[white] w-[10%]">
@@ -31,7 +31,7 @@ const Trending_deal = () => {
               </p>
             </div>
           </div>
-          <div className="w-[90%] h-[8vh] text-[white] flex flex-row justify-between  items-center">
+          <div className="w-[80vw] lg:w-[90%] h-[8vh] text-[white] flex flex-row justify-between  items-center">
             <img
               src="https://seeklogo.com/images/Q/Qatar_Airways-logo-EE07072405-seeklogo.com.png"
               alt=""
@@ -45,7 +45,7 @@ const Trending_deal = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-down" className="container">
+        <div className="container">
           <div className="deal">
             <div className=" mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
               <p>Top flight deal</p>
@@ -76,7 +76,7 @@ const Trending_deal = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className="container">
+        <div className="container">
           <div className="deal">
             <div className=" mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
               <p>Top flight deal</p>

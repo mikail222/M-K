@@ -10,9 +10,9 @@ const Services = () => {
   return (
     <div
       data-aos="fade-up"
-      className="sm:overflow-auto float-left  w-[80vw] lg:w-[98%] h-[40vh] flex flex-row  ml-[2%] justify-center"
+      className="  w-[80vw] lg:w-[98%] lg:h-[40vh] flex flex-row  lg:ml-[2%] justify-center"
     >
-      <p className=" sm:hidden w-[2.7%] mt-[3%] h-[14%] bg-[gray] rounded-[100%] mr-[2%] flex flex-row justify-center items-center cursor-pointer">
+      <p className=" hidden w-[2.7%] mt-[3%] h-[14%] bg-[gray] rounded-[100%] lg:mr-[2%] lg:flex flex-row justify-center items-center cursor-pointer">
         <RiArrowDropLeftLine className="w-[100%] h-[100%] text-white" />
       </p>
       <a href="#" className="sm: w-[100%] h-[20%] flex flex-row  gap-[1.5rem]">
@@ -62,7 +62,7 @@ const Services = () => {
           </p>
         </div>
       </a>
-      <p className=" sm:hidden w-[2.7%] cursor-pointer mt-[3%] h-[14%] bg-[gray] rounded-[100%] flex flex-row justify-center items-center">
+      <p className="hidden w-[2.7%] cursor-pointer mt-[3%] h-[14%] bg-[gray] rounded-[100%] lg:flex flex-row justify-center items-center">
         <RiArrowDropRightLine className="w-[100%] h-[100%] text-white" />
       </p>
     </div>

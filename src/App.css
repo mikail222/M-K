@@ -19,10 +19,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  @apply sm:w-[100vw] lg:w-[90%] h-[78%] mt-[1rem];
+  @apply w-[20rem] lg:w-[90%] h-[78%] lg:mt-[1rem];
 }
 .container {
-  @apply sm:w-[100vw] lg:w-[90%] h-[55vh] border-[1px] border-[#d1a9db] flex flex-col items-center rounded-[3px] bg-[white];
+  @apply w-[90%] lg:w-[90%] h-[55vh] border-[1px] border-[#d1a9db] flex flex-col items-center rounded-[3px] bg-[white];
 }
 .mail {
   border-top: 1px dotted #d1a9db;
@@ -141,7 +141,7 @@ form .a {
   @apply w-[13px] h-[15px] text-[white] flex flex-row justify-center items-center text-center font-bold text-[1rem] rounded-[50%] outline-none;
 }
 .detail {
-  @apply w-[90%] h-[12vh] lg:w-[25%] lg:h-[12vh] bg-[white] rounded-[3px];
+  @apply w-[90%] h-[12vh] lg:w-[25%] bg-[white] rounded-[3px];
 }
 .sign {
   @apply text-white rounded-[100%] flex flex-row justify-center items-center h-[17px] w-[15px] focus:outline-none;
