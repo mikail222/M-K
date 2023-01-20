@@ -116,7 +116,7 @@ const Brand = () => {
                   </p>
                 </button>
               </div>
-              <div className="sm:hidden md:hidden w-[22%] flex flex-row  items-center gap-[1rem] ">
+              <div className="hidden md:hidden w-[22%] lg:flex flex-row  items-center gap-[1rem] ">
                 <IoMdCheckmarkCircleOutline className="fill-[orange] " />
                 <p className="  text-[#0f0326] text-[0.75rem] ">
                   We offer the best deals in the industry!
@@ -124,7 +124,7 @@ const Brand = () => {
               </div>
             </div>
             {flightDetails ? (
-              <div className=" hidden lg:w-[100%] h-[20%] lg:flex flex-row gap-[2rem] items-center">
+              <div className=" hidden lg:w-[100%] lg:h-[20%] lg:flex flex-row gap-[2rem] items-center">
                 <div className="flex flex-row gap-[0.5rem] items-center ml-[3rem] cursor-pointer">
                   <RiArrowLeftRightFill className="fill-white" />
                   <p className="text-[0.75rem] text-white">Round Trip</p>
@@ -160,7 +160,7 @@ const Brand = () => {
                       </button>
                     </div>
                   ))} */}
-                  <p className="text-white">Economy</p>
+                  <p className="text-white text-[0.85rem]">Economy</p>
                   <IoMdArrowDropdown className="fill-white" />
                 </div>
               </div>

@@ -12,7 +12,7 @@ const Trending_deal = () => {
   const departure = new Date();
   const returnDate = day.setDate(day.getDate() + 8);
   return (
-    <div className="w-[100%] my-[10%] flex flex-col justify-center items-center">
+    <div className="w-[100%] my-[10%] lg:my-[20px] flex flex-col justify-center items-center">
       <div className=" flex flex-col w-[100vw] justify-center items-center h-[100vh] lg:w-[80%] lg:h-[50vh] lg:flex lg:flex-row lg:gap-[1rem] ">
         <div className="container">
           <div className="deal">

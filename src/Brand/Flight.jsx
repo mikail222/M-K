@@ -26,7 +26,7 @@ const Flight = () => {
   return (
     <div>
       {" "}
-      <div className="ml-[5%] mt-[3rem] lg:m-0 w-[100%]  flex-col justify-center items-center gap-x-[1rem] lg:h-[30%] lg:flex lg:flex-row lg:gap-[0.25rem] lg:mt-[1rem]">
+      <div className="ml-[5%] mt-[1rem] lg:m-0 w-[100%]  flex-col justify-center items-center gap-x-[1rem] lg:h-[30%] lg:flex lg:flex-row lg:gap-[0.25rem]">
         <div className="trip  detail lg:hidden bg-[#01004d] flex flex-row justify-around items-center text-white text-[0.85rem] font-bold">
           <button type="button">ROUND TRIP</button>
           <button type="button">ONE WAY</button>
@@ -67,7 +67,7 @@ const Flight = () => {
             />
           </form>
         </div>
-        <div className=" w-[90%] my-[1.2rem] lg:w-[27%] h-[12vh] flex flex-row lg:justify-center  items-center gap-[2rem] bg-white  rounded-[3px]">
+        <div className=" w-[90%] my-[1.2rem] lg:w-[27%] h-[12vh] flex flex-row lg:justify-center  items-center gap-[2rem] bg-white lg:m-0 rounded-[3px]">
           <div className="w-[50%] flex flex-row gap-[1rem] lg:justify-center items-center ml-[1rem] ">
             <FcCalendar className="w-[20px] h-[20px]" />
             <div className="flex flex-col justify-center items-center p-[10px]">
