@@ -5,10 +5,9 @@ const Mobile_nav = ({ show, setShow }) => {
   return (
     <div>
       <CgMenuGridR
-        style={{ width: "4rem", height: "2rem", marginRight: "2rem" }}
+        className="menuBar w-[4rem] h-[2rem] mr-[2rem]"
         title="Menu Bar"
         onClick={(e) => setShow(!show)}
-        className="menuBar"
       />
     </div>
   );

@@ -84,7 +84,7 @@ const Brand = () => {
   };
 
   return (
-    <div className="mt-[6.5rem] w-[100%] h-[100vh] overflow-hidden lg:w-[100%] lg:h-[100vh]">
+    <div className=" w-[100%] h-[100vh] overflow-hidden lg:w-[100%] lg:h-[100vh]  lg:mt-[8%]">
       <div className="brand lg:flex flex-col lg:justify-center lg:items-center w-[100%] lg:h-[50vh]">
         <div className="lg:w-[90%] lg:h-[25%] lg:mt-[15rem] ">
           <h1 className="hidden text-[4rem] text-[white] lg:flex flex-row justify-left items-left mb-[1.7rem] tracking-[5px] font-extrabold">

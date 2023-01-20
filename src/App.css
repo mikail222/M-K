@@ -1,8 +1,8 @@
 #root {
-  @apply w-[100%] bg-[white] text-center m-auto;
+  @apply w-[100%] bg-[white] text-center;
 }
 .media {
-  @apply flex flex-row justify-center items-center h-[8rem] gap-[1rem] w-[40%]   ml-[50%];
+  @apply flex flex-row justify-center items-center h-[8rem] gap-[1rem] w-[40%]   lg:ml-[47%] ml-[2rem] lg:mt-[10%];
 }
 .brand {
   background-image: url("https://media.istockphoto.com/id/507909158/photo/plane-wing-above-sky-and-clouds.jpg?s=612x612&w=0&k=20&c=xTiQu_P12MRoJpWE__z7sA_z76TaLdHhDBRuH9Lix-o=");
@@ -12,17 +12,17 @@
   @apply h-[1vh] w-[100%] lg:flex;
 }
 .details {
-  @apply w-[26%] h-[40%] bg-[white] rounded-[3px];
+  @apply w-[26%] lg:h-[40%] bg-[white] rounded-[3px];
 }
 .deal {
   background-image: url("./assets/pirata-studio-film-GlVr1QBPYv8-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  @apply w-[20rem] lg:w-[90%] h-[78%] lg:mt-[1rem];
+  @apply w-[50vw] lg:w-[90%] h-[45vh] lg:h-[78%] mt-[1rem] object-contain;
 }
 .container {
-  @apply w-[90%] lg:w-[90%] h-[55vh] border-[1px] border-[#d1a9db] flex flex-col items-center rounded-[3px] bg-[white];
+  @apply w-[90%] h-[55vh] lg:h-[55vh] border-[1px] border-[#d1a9db] flex flex-col items-center rounded-[3px]  bg-[white];
 }
 .mail {
   border-top: 1px dotted #d1a9db;
@@ -141,8 +141,11 @@ form .a {
   @apply w-[13px] h-[15px] text-[white] flex flex-row justify-center items-center text-center font-bold text-[1rem] rounded-[50%] outline-none;
 }
 .detail {
-  @apply w-[90%] h-[12vh] lg:w-[25%] bg-[white] rounded-[3px];
+  @apply w-[90%] h-[12vh] lg:w-[25%] lg:h-[12vh] bg-[white] rounded-[3px];
 }
 .sign {
   @apply text-white rounded-[100%] flex flex-row justify-center items-center h-[17px] w-[15px] focus:outline-none;
+}
+.trip {
+  @apply bg-white text-[#01004d] rounded-[6px] p-[0.75rem];
 }

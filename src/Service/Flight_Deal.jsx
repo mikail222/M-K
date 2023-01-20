@@ -9,8 +9,11 @@ const Flight_Deal = () => {
     AOS.init({ duration: 3000 });
   }, []);
   return (
-    <div data-aos="fade-down" className=" w-[100%] h-[100vh] lg:h-[45vh] ">
-      <div className="flex-col-reverse w-[94%] h-[30%] flex lg:flex-row justify-around items-center ml-[2rem]">
+    <div
+      data-aos="fade-down"
+      className=" w-[100%] flex flex-col  justify-center items-center mb-[50%] h-[35vh] lg:h-[20vh] "
+    >
+      <div className="flex-col-reverse lg:w-[94%] lg:h-[30%] flex lg:flex-row justify-around items-center lg:ml-[2rem]">
         <div className="flex flex-col lg:justify-center lg:items-center">
           <h3 className="sm:text-[1.6rem] lg:text-[2.4rem] font-extrabold">
             Trending Flight Deals

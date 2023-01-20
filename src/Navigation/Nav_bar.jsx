@@ -21,7 +21,7 @@ const Nav_bar = () => {
   let menu;
   return (
     <div>
-      <div className=" hidden bg-[white] fixed top-0  w-[100%] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between overflow-hidden">
+      <div className=" hidden bg-[white] fixed top-0  w-[100%] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between">
         <div>
           <a
             href="#"
@@ -64,7 +64,7 @@ const Nav_bar = () => {
                 href="#"
                 className="text-[2rem]  font-extrabold text-[#020180] ml-[1rem] "
               >
-                𝔐&𝔨 𝔗𝔯𝔞𝔳𝔢𝔩𝔰 & 𝔗𝔬𝔲𝔯
+                𝔐&𝔨
               </a>
               <MdOutlineClear
                 title="Menu Bar"
@@ -72,6 +72,7 @@ const Nav_bar = () => {
                 className="w-[35px] h-[35px]"
               />
             </div>
+
             <div className="flex flex-col text-left mt-[8%] ml-[1rem]">
               {mobile_nav.map((x, i) => (
                 <div key={i} className="flex flex-row justify-between">
@@ -90,12 +91,12 @@ const Nav_bar = () => {
             </div>
           </div>
         ) : (
-          <div className="flex flex-row w-[95%] h-[15vh] bg-white justify-between items-center ">
+          <div className="flex flex-row w-[90%] h-[15vh] justify-between items-center  ">
             <a
               href="#"
-              className="sm:text-[1.5rem] md:text-[2rem] font-extrabold text-[#020180] ml-[1rem] "
+              className="text-[1.5rem] md:text-[2rem] font-extrabold text-[#020180] ml-[1rem]"
             >
-              𝔐&𝔨 𝔗𝔯𝔞𝔳𝔢𝔩𝔰 & 𝔗𝔬𝔲𝔯
+              𝔐&𝔨
             </a>
             <RxHamburgerMenu
               title="Menu Bar"

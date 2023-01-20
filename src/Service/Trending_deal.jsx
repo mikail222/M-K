@@ -12,14 +12,14 @@ const Trending_deal = () => {
   const departure = new Date();
   const returnDate = day.setDate(day.getDate() + 8);
   return (
-    <div className="flex flex-col">
-      <div className=" flex flex-col justify-center items-center  h-[40vh] lg:w-[70%] lg:h-[50vh] lg:flex lg:flex-row lg:gap-[1rem] lg:ml-[12rem]">
+    <div className="w-[100%] my-[10%] flex flex-col justify-center items-center">
+      <div className=" flex flex-col w-[100vw] justify-center items-center h-[100vh] lg:w-[80%] lg:h-[50vh] lg:flex lg:flex-row lg:gap-[1rem] ">
         <div className="container">
           <div className="deal">
-            <div className="text-[0.75rem] lg:mr-[0.5rem] bg-[white] m-[0.5rem] justify-center rounded-[3px] lg:text-[0.87rem] text-[blue] w-[40%]">
+            <div className="text-[0.75rem] w-[8rem] lg:mr-[0.5rem] bg-[white] m-[0.5rem] ml-[11rem] lg:justify-center rounded-[3px] lg:text-[0.87rem] text-[blue] lg:w-[40%]">
               <p>Top flight deal</p>
             </div>
-            <div className=" sm:ml-[3rem] lg:ml-[1.5rem] text-[1.2rem] font-extrabold text-[white] w-[10%]">
+            <div className=" ml-[3rem] lg:ml-[1.5rem] text-[1.2rem] font-extrabold text-[white] w-[10%]">
               <p>Lagos</p>
               <TbArrowNarrowDown className="w-[25px] h-[25px]" />
               <p>London</p>
@@ -31,13 +31,13 @@ const Trending_deal = () => {
               </p>
             </div>
           </div>
-          <div className="w-[80vw] lg:w-[90%] h-[8vh] text-[white] flex flex-row justify-between  items-center">
+          <div className="w-[90%] h-[8vh] text-[white] flex flex-row justify-between  items-center">
             <img
               src="https://seeklogo.com/images/Q/Qatar_Airways-logo-EE07072405-seeklogo.com.png"
               alt=""
-              className="w-[33%] h-[25px]"
+              className="w-[5rem] lg:w-[33%] h-[25px]"
             />
-            <div className=" w-[40%] h-[5vh] flex flex-row gap-[0.25rem]  justify-center rounded-[3px] items-center bg-[orange]">
+            <div className=" w-[7rem] lg:w-[40%] h-[5vh] flex flex-row gap-[0.25rem]  justify-center rounded-[3px] items-center bg-[orange]">
               <a href="#" className="text-[0.85rem] font-extrabold">
                 Book now
               </a>
@@ -47,7 +47,7 @@ const Trending_deal = () => {
         </div>
         <div className="container">
           <div className="deal">
-            <div className=" mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
+            <div className=" mr-[0.5rem] bg-[white] lg:ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] ml-[11rem] text-[0.87rem] text-[blue] w-[40%] ">
               <p>Top flight deal</p>
             </div>
             <div className="ml-[1.5rem] text-[1.2rem] font-extrabold text-[white] w-[10%]">
@@ -66,9 +66,9 @@ const Trending_deal = () => {
             <img
               src="https://seeklogo.com/images/Q/Qatar_Airways-logo-EE07072405-seeklogo.com.png"
               alt=""
-              className="w-[33%] h-[25px]"
+              className="lg:w-[33%] h-[25px]"
             />
-            <div className=" w-[40%] h-[5vh] flex flex-row gap-[0.25rem]  justify-center rounded-[3px] items-center bg-[orange]">
+            <div className="w-[7rem] lg:w-[40%] h-[5vh] flex flex-row gap-[0.25rem]  justify-center rounded-[3px] items-center bg-[orange]">
               <a href="#" className="text-[0.85rem] font-extrabold">
                 Book now
               </a>
@@ -78,7 +78,7 @@ const Trending_deal = () => {
         </div>
         <div className="container">
           <div className="deal">
-            <div className=" mr-[0.5rem] bg-[white] ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
+            <div className=" mr-[0.5rem] bg-[white] ml-[11rem] lg:ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
               <p>Top flight deal</p>
             </div>
             <div className="ml-[1.5rem] text-[1.2rem] font-extrabold text-[white] w-[10%] ">
@@ -98,9 +98,9 @@ const Trending_deal = () => {
             <img
               src="https://seeklogo.com/images/Q/Qatar_Airways-logo-EE07072405-seeklogo.com.png"
               alt=""
-              className="w-[33%] h-[25px]"
+              className=" lg:w-[33%] h-[25px]"
             />
-            <div className=" w-[40%] h-[5vh] flex flex-row gap-[0.25rem]  justify-center rounded-[3px] items-center bg-[orange]">
+            <div className="w-[7rem] lg:w-[40%] h-[5vh] flex flex-row gap-[0.25rem]  justify-center rounded-[3px] items-center bg-[orange]">
               <a href="#" className="text-[0.85rem] font-extrabold">
                 Book now
               </a>
@@ -109,8 +109,8 @@ const Trending_deal = () => {
           </div>
         </div>
       </div>
-      <div className=" w-[100%] h-[10vh] text-right text-[#0827b1] flex flex-row gap-[0.5rem] mt-[2rem] justify-center items-center ">
-        <a href="http://#" className=" ml-[60%]">
+      <div className=" w-[100%] h-[20vh] mt-[40%] lg:h-[10vh] text-right text-[#0827b1] flex flex-row gap-[0.5rem] lg:mt-[2rem] justify-center items-center ">
+        <a href="http://#" className=" lg:ml-[60%]">
           <p className="text-[0.85rem] font-extrabold">View More details</p>
         </a>
         <RiArrowDropRightLine className="fill-green w-[25px] h-[35px]" />

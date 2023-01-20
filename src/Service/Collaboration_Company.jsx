@@ -9,7 +9,7 @@ const Collaboration_Company = () => {
   }, []);
   return (
     <div data-aos="slide-up" className="w-[100%] h-[30vh]">
-      <div className=" grid grid-cols-[repeat(auto-fit,minmax(5rem,1fr))] gap-[2px]	 lg:flex flex-row lg:gap-[2rem] lg:mt-[6%] justify-center  items-center">
+      <div className=" grid grid-cols-[repeat(auto-fit,minmax(8rem,1fr))] gap-[2px] lg:flex flex-row lg:gap-[2rem] mt-[6%] justify-center items-center">
         <img
           src={iata}
           alt=""

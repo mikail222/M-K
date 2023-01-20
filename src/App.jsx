@@ -24,7 +24,7 @@ function App() {
       <Rent_vehichle />
       <Collaboration_Company />
       <Mail />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

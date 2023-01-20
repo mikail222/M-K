@@ -10,7 +10,9 @@ const Flight = () => {
   const day = new Date();
   const departure = new Date();
   day.setDate(day.getDate() + 3);
+  const [round, setRound] = useState(false);
   const [city, setCity] = useState(" ");
+
   const handleClick = (e) => {
     e.preventDefault();
 
@@ -25,6 +27,11 @@ const Flight = () => {
     <div>
       {" "}
       <div className="ml-[5%] mt-[3rem] lg:m-0 w-[100%]  flex-col justify-center items-center gap-x-[1rem] lg:h-[30%] lg:flex lg:flex-row lg:gap-[0.25rem] lg:mt-[1rem]">
+        <div className="trip  detail lg:hidden bg-[#01004d] flex flex-row justify-around items-center text-white text-[0.85rem] font-bold">
+          <button type="button">ROUND TRIP</button>
+          <button type="button">ONE WAY</button>
+          <button type="button">MULTI-CITY</button>
+        </div>
         <div className="detail flex flex-row gap-[0.75rem] lg:justify-center items-center">
           <RiPlaneFill className="fill-[lightgray] " />
           <form
