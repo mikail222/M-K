@@ -14,7 +14,7 @@ const Trending_deal = () => {
   return (
     <div className="w-[100%] my-[10%] lg:my-[20px] flex flex-col justify-center items-center">
       <div className=" flex flex-col w-[100vw] justify-center items-center h-[100vh] lg:w-[80%] lg:h-[50vh] lg:flex lg:flex-row lg:gap-[1rem] ">
-        <div className="container">
+        <div className="border-[1px] w-[95%] rounded-[5px] flex flex-col  justify-center items-center">
           <div className="deal">
             <div className="text-[0.75rem] w-[8rem] lg:mr-[0.5rem] bg-[white] m-[0.5rem] ml-[11rem] lg:justify-center rounded-[3px] lg:text-[0.87rem] text-[blue] lg:w-[40%]">
               <p>Top flight deal</p>
@@ -31,7 +31,7 @@ const Trending_deal = () => {
               </p>
             </div>
           </div>
-          <div className="w-[90%] h-[8vh] text-[white] flex flex-row justify-between  items-center">
+          <div className=" w-[93%] lg:w-[90%] h-[8vh] text-[white] flex flex-row justify-between  items-center">
             <img
               src="https://seeklogo.com/images/Q/Qatar_Airways-logo-EE07072405-seeklogo.com.png"
               alt=""
@@ -45,7 +45,7 @@ const Trending_deal = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="border-[1px] w-[95%] rounded-[5px] flex flex-col  justify-center items-center">
           <div className="deal">
             <div className=" mr-[0.5rem] bg-[white] lg:ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] ml-[11rem] text-[0.87rem] text-[blue] w-[40%] ">
               <p>Top flight deal</p>
@@ -62,7 +62,7 @@ const Trending_deal = () => {
               </p>
             </div>
           </div>
-          <div className="w-[90%] h-[8vh] text-[white] flex flex-row justify-between  items-center">
+          <div className="w-[93%] lg:w-[90%] h-[8vh] text-[white] flex flex-row justify-between  items-center">
             <img
               src="https://seeklogo.com/images/Q/Qatar_Airways-logo-EE07072405-seeklogo.com.png"
               alt=""
@@ -76,7 +76,7 @@ const Trending_deal = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="border-[1px] w-[95%] rounded-[5px] flex flex-col  justify-center items-center">
           <div className="deal">
             <div className=" mr-[0.5rem] bg-[white] ml-[11rem] lg:ml-[9.5rem] m-[0.5rem] justify-center rounded-[3px] text-[0.87rem] text-[blue] w-[40%]">
               <p>Top flight deal</p>
@@ -94,7 +94,7 @@ const Trending_deal = () => {
               </p>
             </div>
           </div>
-          <div className="w-[90%] h-[8vh] text-[white] flex flex-row justify-between  items-center">
+          <div className="w-[93%] lg:w-[90%] h-[8vh] text-[white] flex flex-row justify-between  items-center">
             <img
               src="https://seeklogo.com/images/Q/Qatar_Airways-logo-EE07072405-seeklogo.com.png"
               alt=""

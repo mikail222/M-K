@@ -24,7 +24,9 @@ const SlideShow = () => {
     <div>
       <div className="slider">
         <div className="slide-container text-white ">
-          <p>For cheaper Virgin tickets, please call 08124330616</p>
+          <p className="text-[0.90rem]">
+            For cheaper Virgin tickets, please call 08124330616
+          </p>
         </div>
       </div>
     </div>

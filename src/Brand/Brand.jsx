@@ -92,9 +92,9 @@ const Brand = () => {
           </h1>
           <div className="w-[100%] h-[100%] lg:w-[100%] lg:h-[45vh] bg-[#01004d] ">
             <div className="flex flex-col lg:h-[30%] lg:flex lg:flex-row items-center justify-between bg-white ">
-              <div className="bg-[#f2f2ff] lg:bg-white w-[100%] h-[10vh] lg:w-[60%] flex flex-row justify-center items-center lg:ml-[0.5rem]">
+              <div className="bg-[#f2f2ff] w-[100%] lg:bg-white  h-[10vh] lg:w-[25%] flex flex-row justify-center items-center lg:mr-[2.5rem]">
                 <button
-                  className="flex flex-row justify-center items-center gap-[0.5rem] lg:focus:outline-1 border-[#01004d] rounded-[3px] w-[8rem] p-[6px] bg-[red]"
+                  className="flex flex-row justify-center items-center gap-[0.5rem] lg:focus:outline-1 border-[#01004d] rounded-[3px] w-[8rem] p-[6px]"
                   onClick={(e) =>
                     setHotelDetails(false) || setFlightDetails(true)
                   }
@@ -105,18 +105,18 @@ const Brand = () => {
                   </p>
                 </button>
                 <button
-                  className="w-[8rem] flex flex-row gap-[0.5rem] justify-center items-center ml-[1rem]  focus:outline-1  outline-[#0f0326] p-[6px] bg-[blue]"
+                  className="w-[8rem] flex flex-row gap-[0.5rem] justify-center items-center ml-[1rem]  focus:outline-1  outline-[#0f0326] p-[6px]"
                   onClick={(e) =>
                     setFlightDetails(false) || setHotelDetails(true)
                   }
                 >
-                  <MdHome className="fill-[black] w-[15px] h-[20px]" />
+                  <MdHome className="fill-[rgb(0,0,0)] w-[15px] h-[20px]" />
                   <p className="text-[black] text-[0.90rem] font-bold">
                     HOTELS
                   </p>
                 </button>
               </div>
-              <div className="hidden md:hidden w-[22%] lg:flex flex-row  items-center gap-[1rem] ">
+              <div className="hidden md:hidden w-[22%] lg:flex flex-row lg:w-[21%] items-center gap-[1rem]">
                 <IoMdCheckmarkCircleOutline className="fill-[orange] " />
                 <p className="  text-[#0f0326] text-[0.75rem] ">
                   We offer the best deals in the industry!

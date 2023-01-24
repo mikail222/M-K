@@ -23,14 +23,16 @@ const Rent_vehichle = () => {
       </div>
       <div className=" w-[90vw] lg:text-center lg:ml-[1rem] lg:w-[30%] flex flex-col justify-left items-left text-left">
         <div className="sm:w-[100vw] sm:text-[1.7rem] sm:mt-[1.5rem] lg:w-[80%] h-[10vh] lg:mt-[35%] ml-[4rem] lg:ml-0 text-left text-[2.3rem] font-extrabold">
-          <p className="sm:w-[100vw]">Rent a vehicle with ease</p>
+          <p className="w-[50%]  lg:w-[20vw] lg:leading-[2.5rem] lg:text-[2.3rem]">
+            Rent a vehicle with ease
+          </p>
         </div>
         <p className=" w-[70vw] text-left mt-[0.5rem]  text-[grey] lg:mt-[8%] ml-[4rem] lg:ml-0 lg:w-[75%]">
           Enhance your driving experience with the right rental to suit your
           transportation needs. With a wide range of vehicle models and sizes,
           our vehicles are reliable and in good condition.
         </p>
-        <div className=" w-[90%] mb-[14rem] ml-[5%] lg:w-[44%] h-[8vh] bg-[orange] flex flex-row justify-center items-center rounded-[3px] gap-[1rem] text-[white] mt-[10%]">
+        <div className=" w-[90%] mb-[14rem] ml-[5%] lg:ml-[0px] lg:p-[0.5rem] lg:w-[44%] h-[8vh] bg-[orange] flex flex-row justify-center items-center rounded-[3px] gap-[1rem] text-[white] mt-[10%]">
           <a href="http://#">Rent a vehichle</a>
           <RiArrowDropRightLine className="fill-white w-[25px] h-[35px]" />
         </div>

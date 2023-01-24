@@ -19,11 +19,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  @apply w-[50vw] lg:w-[90%] h-[45vh] lg:h-[78%] mt-[1rem] object-contain;
+  @apply w-[93%] lg:w-[90%] h-[40vh] lg:h-[78%] mt-[1rem] object-cover rounded-[3px];
 }
-.container {
-  @apply w-[90%] h-[55vh] lg:h-[55vh] border-[1px] border-[#d1a9db] flex flex-col items-center rounded-[3px]  bg-[white];
-}
+
 .mail {
   border-top: 1px dotted #d1a9db;
 }
@@ -31,14 +29,14 @@
   overflow: hidden;
   float: right;
   top: 0;
-  @apply w-[100%] h-[6vh] bg-[#010080]  absolute;
+  @apply w-[100vw] h-[6vh] bg-[#010080] flex flex-col justify-center     items-center absolute;
 }
 .slide-container {
-  @apply w-[100%] h-[auto]
+  @apply w-[100vw] h-[auto]
 relative;
 
   animation-name: slide_image;
-  animation-duration: 30s;
+  animation-duration: 50s;
   animation-direction: normal;
   animation-play-state: running;
   animation-iteration-count: infinite;

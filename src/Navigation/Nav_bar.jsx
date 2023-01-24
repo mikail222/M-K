@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineClear } from "react-icons/md";
 import { RiArrowDropRightLine } from "react-icons/ri";
+import SlideShow from "../Service/SlideShow";
 
 const Nav_bar = () => {
   const [show, setShow] = useState(false);
@@ -22,6 +23,7 @@ const Nav_bar = () => {
   return (
     <div>
       <div className=" hidden bg-[white] mt-[3%] top-0  w-[100%] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between">
+        <SlideShow />
         <div>
           <a
             href="#"
@@ -59,7 +61,7 @@ const Nav_bar = () => {
       <div className="menuBar lg:hidden  bg-white ">
         {show ? (
           <div className=" md:flex flex-col w-[95%] h-[100vh]">
-            <div className="flex flex-row  justify-between mt-[3rem]">
+            <div className="flex flex-row  justify-between mt-[2rem]">
               <a
                 href="#"
                 className="text-[2rem]  font-extrabold text-[#020180] ml-[1rem] "
@@ -91,18 +93,22 @@ const Nav_bar = () => {
             </div>
           </div>
         ) : (
-          <div className="flex flex-row w-[90%] h-[15vh] justify-between items-center mt-[1.5rem] ">
-            <a
-              href="#"
-              className="text-[1.5rem] md:text-[2rem] font-extrabold text-[#020180] ml-[1rem]"
-            >
-              𝔐&𝔨
-            </a>
-            <RxHamburgerMenu
-              title="Menu Bar"
-              onClick={(e) => setShow(!show)}
-              className="w-[30px] h-[25px] "
-            />
+          <div>
+            {" "}
+            <SlideShow />
+            <div className="flex flex-row w-[90%] h-[15vh] justify-between items-center mt-[1.5rem] ">
+              <a
+                href="#"
+                className="text-[1.5rem] md:text-[2rem] font-extrabold text-[#020180] ml-[1rem]"
+              >
+                𝔐&𝔨
+              </a>
+              <RxHamburgerMenu
+                title="Menu Bar"
+                onClick={(e) => setShow(!show)}
+                className="w-[30px] h-[25px] "
+              />
+            </div>
           </div>
         )}
       </div>

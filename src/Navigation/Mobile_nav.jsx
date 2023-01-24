@@ -1,5 +1,6 @@
 import React from "react";
 import { CgMenuGridR } from "react-icons/cg";
+import SlideShow from "../Service/SlideShow";
 
 const Mobile_nav = ({ show, setShow }) => {
   return (
