@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <div
       data-aos="fade-up"
-      className=" lg:w-[80%] lg:h-[40vh] flex flex-row mt-[3%] ml-[10%] justify-center "
+      className=" lg:w-[80%] w-[70%] lg:h-[40vh] flex flex-row mt-[3%] lg:ml-[10%] justify-center "
     >
       <p className=" hidden w-[2.7%] mt-[3%] h-[14%] bg-[gray] rounded-[100%] lg:mr-[2%] lg:flex flex-row justify-center items-center cursor-pointer">
         <RiArrowDropLeftLine className="w-[100%] h-[100%] text-white" />

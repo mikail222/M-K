@@ -11,14 +11,14 @@ const Flight_Deal = () => {
   return (
     <div
       data-aos="fade-down"
-      className=" w-[100%] flex flex-col  justify-center items-center mb-[50%] lg:mb-[1px] h-[35vh] lg:h-[20vh] "
+      className="w-[100%] flex flex-col  justify-center items-center mb-[50%] lg:mb-[1px] h-[35vh] lg:h-[20vh] "
     >
-      <div className="flex-col-reverse lg:w-[80%] lg:h-[30%] flex lg:flex-row justify-between items-center ">
+      <div className="flex-col-reverse lg:w-[80%] lg:h-[30%] flex lg:flex-row justify-between items-center gap-[3rem]">
         <div className="flex flex-col lg:justify-center lg:items-center">
           <h3 className="sm:text-[1.6rem] lg:text-[2.4rem] font-extrabold">
             Trending Flight Deals
           </h3>
-          <p className="text-[grey] text-left mt-[0.5rem]">
+          <p className="text-[grey] text-left mt-[1rem]">
             Get the best flight deals, airline specials and promotions
           </p>
         </div>

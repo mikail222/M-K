@@ -11,7 +11,7 @@ const Hotel_Dropdown = ({
     <div>
       <div className="hotel_container">
         <div>
-          <div className="flex flex-row justify-around mb-[2rem] text-[#01004d] mt-[8%] items-center">
+          <div className="flex flex-row justify-around mb-[2rem] text-[#01004d] mt-[8%] items-center  z-[1]">
             <p className="text-[0.85rem] text-[gray]">Room </p>
             <div className="flex flex-row  border-[#01004d] border-[2px] px-[0.78rem] gap-[0.5rem]">
               <p className="text-[0.78rem]">Add room</p>

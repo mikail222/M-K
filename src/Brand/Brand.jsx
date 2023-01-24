@@ -84,7 +84,7 @@ const Brand = () => {
   };
 
   return (
-    <div className=" w-[100%] h-[100vh] overflow-hidden lg:w-[100%] lg:h-[100vh]  lg:mt-[8%]">
+    <div className="w-[100%] h-[100vh] lg:w-[100%] lg:h-[100vh] z-[1] lg:mt-[0%]">
       <div className="brand lg:flex flex-col lg:justify-center lg:items-center w-[100%] lg:h-[50vh]">
         <div className="lg:w-[90%] lg:h-[25%] lg:mt-[15rem] ">
           <h1 className="hidden text-[4rem] text-[white] lg:flex flex-row justify-left items-left mb-[1.7rem] tracking-[5px] font-extrabold">
@@ -94,7 +94,7 @@ const Brand = () => {
             <div className="flex flex-col lg:h-[30%] lg:flex lg:flex-row items-center justify-between bg-white ">
               <div className="bg-[#f2f2ff] lg:bg-white w-[100%] h-[10vh] lg:w-[60%] flex flex-row justify-center items-center lg:ml-[0.5rem]">
                 <button
-                  className="flex flex-row justify-center items-center gap-[0.5rem] lg:focus:outline-1 border-[#01004d] rounded-[3px] w-[20%] p-[6px] "
+                  className="flex flex-row justify-center items-center gap-[0.5rem] lg:focus:outline-1 border-[#01004d] rounded-[3px] w-[8rem] p-[6px] bg-[red]"
                   onClick={(e) =>
                     setHotelDetails(false) || setFlightDetails(true)
                   }
@@ -105,7 +105,7 @@ const Brand = () => {
                   </p>
                 </button>
                 <button
-                  className="w-[8rem] flex flex-row gap-[0.5rem] justify-center items-center ml-[1rem]  focus:outline-1  outline-[#0f0326] "
+                  className="w-[8rem] flex flex-row gap-[0.5rem] justify-center items-center ml-[1rem]  focus:outline-1  outline-[#0f0326] p-[6px] bg-[blue]"
                   onClick={(e) =>
                     setFlightDetails(false) || setHotelDetails(true)
                   }

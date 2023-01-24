@@ -21,7 +21,7 @@ const Nav_bar = () => {
   let menu;
   return (
     <div>
-      <div className=" hidden bg-[white] fixed top-0  w-[100%] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between">
+      <div className=" hidden bg-[white] mt-[3%] top-0  w-[100%] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between">
         <div>
           <a
             href="#"
@@ -59,7 +59,7 @@ const Nav_bar = () => {
       <div className="menuBar lg:hidden  bg-white ">
         {show ? (
           <div className=" md:flex flex-col w-[95%] h-[100vh]">
-            <div className="flex flex-row  justify-between mt-[5%]">
+            <div className="flex flex-row  justify-between mt-[3rem]">
               <a
                 href="#"
                 className="text-[2rem]  font-extrabold text-[#020180] ml-[1rem] "
@@ -69,7 +69,7 @@ const Nav_bar = () => {
               <MdOutlineClear
                 title="Menu Bar"
                 onClick={(e) => setShow(!show)}
-                className="w-[35px] h-[35px]"
+                className="w-[35px] h-[35px] "
               />
             </div>
 
@@ -91,7 +91,7 @@ const Nav_bar = () => {
             </div>
           </div>
         ) : (
-          <div className="flex flex-row w-[90%] h-[15vh] justify-between items-center  ">
+          <div className="flex flex-row w-[90%] h-[15vh] justify-between items-center mt-[1.5rem] ">
             <a
               href="#"
               className="text-[1.5rem] md:text-[2rem] font-extrabold text-[#020180] ml-[1rem]"
@@ -101,7 +101,7 @@ const Nav_bar = () => {
             <RxHamburgerMenu
               title="Menu Bar"
               onClick={(e) => setShow(!show)}
-              className="w-[30px] h-[25px]"
+              className="w-[30px] h-[25px] "
             />
           </div>
         )}

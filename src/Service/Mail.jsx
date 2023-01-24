@@ -21,7 +21,7 @@ const Mail = () => {
   return (
     <div
       data-aos="fade-up"
-      className="bg-[#d7e7ff] mail h-[60vh] border-[#d1a9db] w-[100%] lg:h-[40vh] lg:flex lg:flex-row "
+      className="bg-[#d7e7ff] mail h-[65vh] border-[#d1a9db] w-[100%] lg:h-[40vh] lg:flex lg:flex-row "
     >
       <div className=" flex-col justify-center  items-center  lg:flex lg:flex-row lg:w-[40%] lg:ml-[13%]">
         <div className="flex flex-col justify-center items-center lg:w-[20%]">
@@ -32,11 +32,11 @@ const Mail = () => {
           />
         </div>
         <div className=" w-[100%] text-center lg:text-[1.3rem] font-bold lg:text-left mt-[6%] ">
-          <p className="lg:w-[60%]">
+          <p className="lg:w-[60%] text-[1.5rem]">
             Want to get the latest travel news and deals?
           </p>
 
-          <p className="lg:w-[90%] text-[0.75rem] mt-[0.5rem] text-[grey] leading-[14px] font-thin">
+          <p className="lg:w-[90%] text-[0.75rem] mt-[0.5rem] text-[grey] leading-[14px] font-thin mb-[1rem]">
             Enter your email and we'll send them your way.
           </p>
         </div>
