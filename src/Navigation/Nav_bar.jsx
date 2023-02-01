@@ -3,14 +3,16 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineClear } from "react-icons/md";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import SlideShow from "../Service/SlideShow";
+import { useNavigate } from "react-router-dom";
 
 const Nav_bar = () => {
+  const navigate = useNavigate();
   const [show, setShow] = useState(false);
   const nav = [
-    "Hotel",
-    "Dubai visa",
-    "Vacation packages",
-    "Become an afillation",
+    { Hotel: "Hotel" },
+    { visa: "Dubai visa" },
+    { vacation: "Vacation packages" },
+    { affilate: "Become an afillation" },
   ];
   const mobile_nav = [
     "Dubai visa",
@@ -22,36 +24,38 @@ const Nav_bar = () => {
   let menu;
   return (
     <div>
-      <div className=" hidden bg-[white] mt-[3%] top-0  w-[100%] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between">
+      <div className=" hidden bg-[white] mt-[3%] top-0  w-[100%] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between lg:border-b-[2px] border-[#f7f7f7]">
         <SlideShow />
         <div>
           <a
-            href="#"
-            className="text-[white] text-[2rem] p-[10px] rounded-[100%] hover:bg-[transparent]  hover:text-[black] hover:border-[#0f0326] border-[1px] bg-[#01004d]  ml-[6rem] border-[#d1a9db]"
+            onClick={() => navigate("/")}
+            className="text-[white] text-[2rem] p-[10px] rounded-[100%] hover:bg-[transparent]  hover:text-[black] hover:border-[#0f0326] border-[1px] bg-[#01004d]   border-[#d1a9db]"
           >
             𝔐&𝔨
           </a>
         </div>
         <div className="flex flex-row gap-[0.45rem]  mr-[0.15rem] ">
-          {nav.map((x, i) => (
-            <a
-              href="http://#"
+          {nav.map(({ Hotel, visa, vacation, affilate }, i) => (
+            <div
               key={i}
-              className="outline-none text-[#0f0326] rounded-[20%] text-[0.95rem] p-[0.85rem]"
+              className=" text-[#0f0326] rounded-[20%] text-[0.95rem] p-[0.85rem]"
             >
-              {x}
-            </a>
+              <p onClick={() => navigate("/")}>{Hotel}</p>
+              <p onClick={() => navigate("/Visa_assistance")}>{visa}</p>
+              <p onClick={() => navigate("/")}>{vacation}</p>
+              <p onClick={() => navigate("/")}>{affilate}</p>
+            </div>
           ))}
         </div>
         <div className="flex flex-row gap-[1.5rem] items-center">
           <a
-            href="http://#"
+            onClick={() => navigate("/Login")}
             className="outline-none text-[0.95rem] text-[#01004d] font-bold"
           >
             Login
           </a>
           <a
-            href="http://#"
+            onClick={() => navigate("/Sign_in")}
             className="outline-none text-[0.95rem]  p-[0.65rem] mb-[0.20rem] bg-[orange] rounded-[3px] mr-[5rem] font-bold px-[0.95rem] text-white"
           >
             Create account
@@ -96,7 +100,7 @@ const Nav_bar = () => {
           <div>
             {" "}
             <SlideShow />
-            <div className="flex flex-row w-[90%] h-[15vh] justify-between items-center mt-[1.5rem] ">
+            <div className="flex flex-row w-[90vw] h-[15vh] justify-between items-center mt-[1.5rem] ">
               <a
                 href="#"
                 className="text-[1.5rem] md:text-[2rem] font-extrabold text-[#020180] ml-[1rem]"

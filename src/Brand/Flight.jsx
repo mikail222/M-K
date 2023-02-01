@@ -26,10 +26,14 @@ const Flight = () => {
   return (
     <div>
       {" "}
-      <div className="ml-[5%] mt-[1rem] lg:m-0 w-[100%]  flex-col justify-center items-center gap-x-[1rem] lg:h-[30%] lg:flex lg:flex-row lg:gap-[0.25rem]">
+      <div className="ml-[3.5%] mt-[1rem] lg:m-0 w-[100%]  flex-col justify-center items-center gap-x-[1rem] lg:h-[30%] lg:flex lg:flex-row lg:gap-[0.25rem]">
         <div className="trip  detail lg:hidden bg-[#01004d] flex flex-row justify-around items-center text-white text-[0.85rem] font-bold">
-          <button type="button">ROUND TRIP</button>
-          <button type="button">ONE WAY</button>
+          <button className="active:bg-blue-400" type="button">
+            ROUND TRIP
+          </button>
+          <button className="active:bg-blue-400" type="button">
+            ONE WAY
+          </button>
           <button type="button">MULTI-CITY</button>
         </div>
         <div className="detail flex flex-row gap-[0.75rem] lg:justify-center items-center">

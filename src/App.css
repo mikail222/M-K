@@ -1,6 +1,6 @@
-#root {
-  @apply w-[100vw] bg-[white] text-center;
-}
+/* #root {
+  @apply w-[90vw] bg-[white] text-center;
+} */
 .media {
   @apply flex flex-row justify-center items-center h-[8rem] gap-[1rem] w-[40%]   lg:ml-[47%] ml-[2rem] lg:mt-[10%];
 }
@@ -25,6 +25,7 @@
 .mail {
   border-top: 1px dotted #d1a9db;
 }
+
 .slider {
   overflow: hidden;
   float: right;
@@ -80,4 +81,17 @@ form .a {
 }
 .trip {
   @apply bg-white text-[#01004d] rounded-[6px] p-[0.75rem];
+}
+.accessibility input,
+.travel input {
+  @apply outline-none  w-[80%] border-b-[1px] bg-[transparent] ml-[10%];
+}
+.accessibility label {
+  @apply text-[0.70rem] text-[gray] ml-[10%] mt-[5%];
+}
+.accessibility {
+  @apply flex flex-col justify-center items-center;
+}
+.travel label {
+  @apply text-[0.70rem] text-[gray] ml-[10%] mt-[5%] text-left;
 }

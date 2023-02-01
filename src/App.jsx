@@ -1,30 +1,22 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
-import Nav_bar from "./Navigation/Nav_bar";
-import Footer from "./Footer/Footer";
-import Brand from "./Brand/Brand";
-import Flight_Deal from "./Service/Flight_Deal";
-import Trending_deal from "./Service/Trending_deal";
-import Rent_vehichle from "./Service/Rent_vehichle";
-import Collaboration_Company from "./Service/Collaboration_Company";
-import Mail from "./Service/Mail";
-import Services from "./Service/Services";
-import SlideShow from "./Service/SlideShow";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import Login from "./Accessibility/Login";
+import Home from "./Home/Home";
+import Sign_in from "./Accessibility/Sign_in";
+import { useState } from "react";
+import Nav_details from "./Service/Nav_details";
 
 function App() {
+  const navigate = useNavigate();
+  const [shownav, setShownav] = useState(false);
   return (
     <div className="App">
-      <Nav_bar />
-      <Brand />
-      <Services />
-      <Flight_Deal />
-      <Trending_deal />
-
-      <Rent_vehichle />
-      <Collaboration_Company />
-      <Mail />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Login" element={<Login navigate={navigate} />} />
+        <Route path="/Sign_in" element={<Sign_in navigate={navigate} />} />
+        <Route path="/Visa_assistance" element={<Nav_details />} />
+      </Routes>
     </div>
   );
 }

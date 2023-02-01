@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { RiPlaneFill } from "react-icons/ri";
 import { MdHome } from "react-icons/md";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { HiBadgeCheck } from "react-icons/hi";
 import { RiArrowLeftRightFill } from "react-icons/ri";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -117,7 +117,7 @@ const Brand = () => {
                 </button>
               </div>
               <div className="hidden md:hidden w-[22%] lg:flex flex-row lg:w-[21%] items-center gap-[1rem]">
-                <IoMdCheckmarkCircleOutline className="fill-[orange] " />
+                <HiBadgeCheck className="fill-[orange] w-[25px] h-[25px] " />
                 <p className="  text-[#0f0326] text-[0.75rem] ">
                   We offer the best deals in the industry!
                 </p>
@@ -169,7 +169,7 @@ const Brand = () => {
             )}
             {flightDetails ? <Flight /> : hotelDetails ? <Hotel /> : ""}
             <div className="details w-[90%] h-[12vh] bg-[transparent] lg:hidden lg:w-[22%] flex flex-row  justify-center items-center gap-[1rem] ">
-              <IoMdCheckmarkCircleOutline className="fill-[orange] " />
+              <HiBadgeCheck className="fill-[orange] w-[25px] h-[25px] " />
               <p className="text-white  lg:text-[#0f0326] text-[0.75rem] ">
                 We offer the best deals in the industry!
               </p>

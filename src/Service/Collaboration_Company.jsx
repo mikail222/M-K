@@ -1,20 +1,20 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import iata from "../assets/kisspng-international-air-transport-association-airline-tr-travel-agency-5ac2ffad33e078.2916961215227288772125.png";
+// import iata from "../assets/kisspng-international-air-transport-association-airline-tr-travel-agency-5ac2ffad33e078.2916961215227288772125.png";
 
 const Collaboration_Company = () => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
   return (
-    <div data-aos="slide-up" className="w-[100%] h-[30vh]">
-      <div className=" grid grid-cols-[repeat(auto-fit,minmax(8rem,1fr))] gap-[2px] lg:flex flex-row lg:gap-[2rem] mt-[6%] justify-center items-center">
-        <img
+    <div data-aos="slide-up" className="w-[100vw] h-[30vh]">
+      <div className=" grid grid-cols-[repeat(auto-fit,minmax(10rem,1fr))] gap-[2px] lg:flex flex-row lg:gap-[1rem] mt-[6%] justify-center items-center">
+        {/* <img
           src={iata}
           alt=""
-          className="w-[3rem] h-10 lg:w-[5%] lg:h-[6vh]  lg:mr-[1rem]"
-        />
+          className="w-[3rem] h-10 lg:w-[5%] lg:h-[6vh]  "
+        /> */}
         <img
           src="https://pbs.twimg.com/profile_images/1324492926542598146/tQCrV1h0_400x400.jpg"
           alt=""
@@ -28,12 +28,12 @@ const Collaboration_Company = () => {
         <img
           src="https://tukuz.com/wp-content/uploads/2020/10/flutterwave-logo-vector.png"
           alt=""
-          className="w-[100%] h-20 lg:w-[13%] lg:h-[15vh]"
+          className="w-[7rem] h-20 lg:w-[13%] lg:h-[15vh]"
         />
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Interswitch_logo.svg/2560px-Interswitch_logo.svg.png"
           alt=""
-          className="w-[7rem] h-8 ml-6 lg:w-[10%] lg:h-[5vh]"
+          className="w-[5rem] h-8 ml-6 lg:w-[10%] lg:h-[5vh]"
         />
       </div>
     </div>
