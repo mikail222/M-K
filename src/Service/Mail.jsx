@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import speaker from "../assets/—Pngtree—vector speaker icon_3779063.png";
+import speaker from "../assets/—Pngtree—vector speaker icon_3779063.png";
 
 const Mail = () => {
   useEffect(() => {
@@ -25,11 +25,11 @@ const Mail = () => {
     >
       <div className=" flex-col justify-center  items-center  lg:flex lg:flex-row lg:w-[40%] lg:ml-[13%]">
         <div className="flex flex-col justify-center items-center lg:w-[20%]">
-          {/* <img
+          <img
             src={speaker}
             alt=""
             className=" object-contain w-[9rem] lg:w-[30rem] mt-[2%] lg:origin-bottom rotate-[-28deg] lg:h-[17vh]"
-          /> */}
+          />
         </div>
         <div className=" w-[100%] text-center lg:text-[1.3rem] font-bold lg:text-left mt-[6%] ">
           <p className="lg:w-[60%] text-[1.5rem]">

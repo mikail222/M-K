@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../Footer/Footer";
 import Brand from "../Brand/Brand";
 import Flight_Deal from "../Service/Flight_Deal";
@@ -9,18 +9,31 @@ import Mail from "../Service/Mail";
 import Services from "../Service/Services";
 import Nav_bar from "../Navigation/Nav_bar";
 
-const Home = () => {
+const Home = ({ shownav, setShownav, navigate }) => {
+  const [flightDetails, setFlightDetails] = useState(true);
+  const [hotelDetails, setHotelDetails] = useState(true);
+
   return (
     <div>
-      <Nav_bar />
-      <Brand />
-      <Services />
+      <Nav_bar
+        setHotelDetails={setHotelDetails}
+        setFlightDetails={setFlightDetails}
+        shownav={shownav}
+        setShownav={setShownav}
+      />
+      <Brand
+        flightDetails={flightDetails}
+        setFlightDetails={setFlightDetails}
+        hotelDetails={hotelDetails}
+        setHotelDetails={setHotelDetails}
+      />
+      <Services navigate={navigate} />
       <Flight_Deal />
       <Trending_deal />
       <Rent_vehichle />
       <Collaboration_Company />
       <Mail />
-      <Footer />
+      <Footer navigate={navigate} />
     </div>
   );
 };

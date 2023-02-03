@@ -95,3 +95,10 @@ form .a {
 .travel label {
   @apply text-[0.70rem] text-[gray] ml-[10%] mt-[5%] text-left;
 }
+.socialMedia {
+  background-image: url("https://storage.googleapis.com/b2c-production/static/html/staticPages/img/contact_banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @apply w-[100vw] h-[60vh] border-[1px];
+}

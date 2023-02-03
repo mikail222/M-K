@@ -4,8 +4,9 @@ import { MdOutlineClear } from "react-icons/md";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import SlideShow from "../Service/SlideShow";
 import { useNavigate } from "react-router-dom";
+import logo1 from "../assets/darul-nur-low-resolution-logo-color-on-transparent-background (1).png";
 
-const Nav_bar = () => {
+const Nav_bar = ({ setHotelDetails, setFlightDetails }) => {
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
   const nav = [
@@ -27,23 +28,27 @@ const Nav_bar = () => {
       <div className=" hidden bg-[white] mt-[3%] top-0  w-[100%] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between lg:border-b-[2px] border-[#f7f7f7]">
         <SlideShow />
         <div>
-          <a
-            onClick={() => navigate("/")}
-            className="text-[white] text-[2rem] p-[10px] rounded-[100%] hover:bg-[transparent]  hover:text-[black] hover:border-[#0f0326] border-[1px] bg-[#01004d]   border-[#d1a9db]"
-          >
-            𝔐&𝔨
-          </a>
+          <button onClick={() => navigate("/")} className="">
+            <img src={logo1} alt="" className="w-[100px] h-[60px]" />
+          </button>
         </div>
-        <div className="flex flex-row gap-[0.45rem]  mr-[0.15rem] ">
+        <div className="flex flex-row gap-[0.45rem]  mr-[4.15rem] ">
           {nav.map(({ Hotel, visa, vacation, affilate }, i) => (
             <div
               key={i}
               className=" text-[#0f0326] rounded-[20%] text-[0.95rem] p-[0.85rem]"
             >
-              <p onClick={() => navigate("/")}>{Hotel}</p>
+              <p
+                onClick={() =>
+                  (navigate("/") && setHotelDetails(true)) ||
+                  setFlightDetails(false)
+                }
+              >
+                {Hotel}
+              </p>
               <p onClick={() => navigate("/Visa_assistance")}>{visa}</p>
               <p onClick={() => navigate("/")}>{vacation}</p>
-              <p onClick={() => navigate("/")}>{affilate}</p>
+              <p onClick={() => navigate("/Affilate")}>{affilate}</p>
             </div>
           ))}
         </div>

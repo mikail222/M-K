@@ -5,7 +5,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
 import { BiCopyright } from "react-icons/bi";
 
-const Footer = () => {
+const Footer = ({ navigate }) => {
   return (
     <div>
       <div className="bg-[#01004d] w-[100%] h-[90vh] lg:h-[57vh] flex flex-col lg:flex-row  lg:justify-between gap-[3rem]">
@@ -29,7 +29,7 @@ const Footer = () => {
             <div className="flex flex-col text-[1rem] text-left  leading-[2.5rem] lg:leading-[2rem]">
               <p className="text-[1.7rem] lg:text-[1.5rem] font-bold">𝔐&𝔨</p>
               <a href="https://#">About us</a>
-              <a href="https://#">Contact us</a>
+              <p onClick={() => navigate("/Contact")}>Contact us</p>
               <a href="https://#">Feedback</a>
             </div>
           </div>

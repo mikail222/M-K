@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
 
-const Services = () => {
+const Services = ({ navigate }) => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
@@ -47,8 +47,8 @@ const Services = () => {
             </p>
           </div>
         </a>
-        <a
-          href="#"
+        <button
+          onClick={() => navigate("/Visa_assistance")}
           className=" bg-white w-[90vw] lg:w-[40%] h-[20%] flex flex-row gap-[1.5rem]"
         >
           <img
@@ -62,7 +62,7 @@ const Services = () => {
               all inclusive visa assistance in a timely,and secure manner
             </p>
           </div>
-        </a>
+        </button>
         <p className="hidden w-[2.7%] cursor-pointer mt-[3%] h-[14%] bg-[gray] rounded-[100%] lg:flex flex-row justify-center items-center">
           <RiArrowDropRightLine className="w-[100vw] h-[100%] text-white" />
         </p>

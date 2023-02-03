@@ -10,10 +10,13 @@ import Flight from "./Flight";
 import Hotel from "./Hotel";
 import Flight_Dropdown from "./Flight_Dropdown";
 
-const Brand = () => {
+const Brand = ({
+  setHotelDetails,
+  setFlightDetails,
+  flightDetails,
+  hotelDetails,
+}) => {
   const [allCountries, setAllCountries] = useState([]);
-  const [flightDetails, setFlightDetails] = useState(true);
-  const [hotelDetails, setHotelDetails] = useState(true);
   const [booking, setBooking] = useState(false);
   const [totalPassanger, setTotalpassanger] = useState(1);
   const [selecDisplay, setSelectDisplay] = useState(null);
