@@ -32,7 +32,7 @@ const Contact = () => {
               <p>Address: 7B iwaro Lane Isolo-Akure </p>
               <p> Ondo State.Nigeria</p>
               <p>Phone: +234-8124330616</p>
-              <p>Email: darulnur@gmail.com </p>
+              <p>Email: darunnur@gmail.com </p>
             </div>
           </div>
         </aside>
