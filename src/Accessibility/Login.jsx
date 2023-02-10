@@ -5,7 +5,7 @@ import { GrCheckbox } from "react-icons/gr";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { BiShow } from "react-icons/bi";
 
-const Login = ({ navigate }) => {
+const Login = ({ navigate, darunnur }) => {
   const [check, setCheck] = useState(false);
   const [user, setUser] = useState([]);
 
@@ -19,14 +19,16 @@ const Login = ({ navigate }) => {
     e.target.reset();
   };
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <div className="w-[100%] h-[4rem] bg-white text-[2rem] text-[#010080] flex flex-row justify-center items-center font-extrabold">
-        <p onClick={() => navigate("/")} className="cursor-pointer">
-          {" "}
-          𝔐&𝔨 Travels & Tour
+        <p
+          onClick={() => navigate("/")}
+          className="cursor-pointer flex flex-row justify-center items-center "
+        >
+          <img src={darunnur} alt="" className="w-[40%] h-[30px] " />
         </p>
       </div>
-      <div className="bg-[#010080] flex flex-col justify-center items-center  w-[100vw] h-[100vh]">
+      <div className="bg-[#010080] flex flex-col justify-center items-center  w-[100vw] h-[110vh] pb-[5rem]">
         <p className="text-[1rem] text-white my-[3%] font-extrabold">LOG IN</p>
         <form
           onSubmit={handleSubmit}

@@ -4,8 +4,11 @@ import { SiIata } from "react-icons/si";
 import { BsInstagram } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
 import { BiCopyright } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
-const Footer = ({ navigate }) => {
+const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="bg-[#01004d] w-[100%] h-[90vh] lg:h-[57vh] flex flex-col lg:flex-row  lg:justify-between gap-[3rem]">
@@ -27,9 +30,16 @@ const Footer = ({ navigate }) => {
               <a href="https://#"> Affilations</a>
             </div>
             <div className="flex flex-col text-[1rem] text-left  leading-[2.5rem] lg:leading-[2rem]">
-              <p className="text-[1.7rem] lg:text-[1.5rem] font-bold">𝔐&𝔨</p>
+              <p className="text-[1.7rem] lg:text-[1.5rem] font-bold">
+                Darun-Nur
+              </p>
               <a href="https://#">About us</a>
-              <p onClick={() => navigate("/Contact")}>Contact us</p>
+              <p
+                onClick={() => navigate("/Contact")}
+                className="cursor-pointer"
+              >
+                Contact us
+              </p>
               <a href="https://#">Feedback</a>
             </div>
           </div>
@@ -76,7 +86,7 @@ const Footer = ({ navigate }) => {
           <div className="text-left lg:text-center text-[0.85rem] inline-flex">
             <BiCopyright className="mt-[4px] fill-white lg:mr-[5px]" />
             <p className="text-[white]">
-              2023 M & K.All Right Reserved | BN:3466674
+              2023 Darun-Nur.All Right Reserved | BN:3466674
             </p>
           </div>
 

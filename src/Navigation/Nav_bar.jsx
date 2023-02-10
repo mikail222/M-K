@@ -4,7 +4,7 @@ import { MdOutlineClear } from "react-icons/md";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import SlideShow from "../Service/SlideShow";
 import { useNavigate } from "react-router-dom";
-import logo1 from "../assets/darul-nur-low-resolution-logo-color-on-transparent-background (1).png";
+import darunnur from "../assets/darun-nur-low-resolution-logo-color-on-transparent-background.png";
 
 const Nav_bar = ({ setHotelDetails, setFlightDetails }) => {
   const navigate = useNavigate();
@@ -28,8 +28,8 @@ const Nav_bar = ({ setHotelDetails, setFlightDetails }) => {
       <div className=" hidden bg-[white] mt-[3%] top-0  w-[100%] cursor-pointer h-[16vh] lg:flex flex-row items-center justify-between lg:border-b-[2px] border-[#f7f7f7]">
         <SlideShow />
         <div>
-          <button onClick={() => navigate("/")} className="">
-            <img src={logo1} alt="" className="w-[100px] h-[60px]" />
+          <button onClick={() => navigate("/")} className="outline-0">
+            <img src={darunnur} alt="" className="w-[20rem] h-[30px]" />
           </button>
         </div>
         <div className="flex flex-row gap-[0.45rem]  mr-[4.15rem] ">

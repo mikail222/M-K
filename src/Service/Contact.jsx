@@ -19,7 +19,7 @@ const Contact = () => {
         <aside>
           <div
             data-aos="fade-zoom-in"
-            className="flex flex-col items-center  rounded-[15px] w-[40vw] h-[60vh] shadow-md mt-[30%] bg-white border-[1px]"
+            className="flex flex-col items-center  rounded-[15px] w-[40vw] h-[60vh] shadow-md mt-[30%] bg-white border-[2px]"
           >
             <div className="mt-[10%]">
               <CiLocationOn className="w-[40px] h-[40px] fill- [#ffb712] animate-bounce ml-[2rem]" />
@@ -44,7 +44,7 @@ const Contact = () => {
             data-aos="fade-zoom-in"
             // data-aos-offset="200"
             // data-aos-easing="ease-in-sine"
-            className="travel flex flex-col justify-center rounded-[15px] w-[40vw] h-[auto] shadow-md my-[10%] bg-white border-[1px]"
+            className="travel flex flex-col justify-center rounded-[15px] w-[40vw] h-[auto] shadow-md my-[10%] bg-white border-[2px]"
           >
             <label htmlFor="">FIRST NAME</label>
             <input type="text" />

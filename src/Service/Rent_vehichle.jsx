@@ -33,7 +33,7 @@ const Rent_vehichle = () => {
           our vehicles are reliable and in good condition.
         </p>
         <div className=" w-[90%] mb-[14rem] ml-[5%] lg:ml-[0px] lg:p-[0.5rem] lg:w-[44%] h-[8vh] bg-[orange] flex flex-row justify-center items-center rounded-[3px] gap-[1rem] text-[white] mt-[10%]">
-          <a href="http://#">Rent a vehichle</a>
+          <a href="https://www.rentalcars.com">Rent a vehichle</a>
           <RiArrowDropRightLine className="fill-white w-[25px] h-[35px]" />
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
+import bag from "../assets/71rsagJu5tL._AC_UY500_-removebg-preview.png";
 
 const Services = ({ navigate }) => {
   useEffect(() => {
@@ -17,11 +18,7 @@ const Services = ({ navigate }) => {
           href="#"
           className="w-[90vw] lg:w-[40%] lg:h-[20vh] flex flex-row  gap-[1.5rem]"
         >
-          <img
-            src="https://m.media-amazon.com/images/I/71rsagJu5tL._AC_UY500_.jpg"
-            alt=""
-            className="w-[30%]  h-[18vh]"
-          />
+          <img src={bag} alt="" className="w-[30%]  h-[18vh]" />
           <div className="flex flex-col text-left bg-white">
             <p className="text-[1.1rem] font-extrabold">Blue Ribbon</p>
             <p className="pr-[2rem] mt-[1rem] text-[grey]">

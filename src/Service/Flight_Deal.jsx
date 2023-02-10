@@ -23,7 +23,7 @@ const Flight_Deal = () => {
           </p>
         </div>
         <a
-          href="http://#"
+          href="https://whatapp.com/"
           className="w-[90%] h-[12vh] flex flex-row justify-center items-center lg:w-[17%] lg:h-[9.5vh] rounded-[5px] bg-[#128c7e]  gap-[0.75rem]   pl-[7px]"
         >
           <div className=" lg:w-[40px] h-[35px] rounded-[100%] bg-[#5fb042] border-[white] border-[2px] lg:ml-[1rem] flex  flex-row items-center justify-center ">

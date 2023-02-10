@@ -3,7 +3,7 @@ import { BsFillCheckSquareFill } from "react-icons/bs";
 import { GrCheckbox } from "react-icons/gr";
 import { RiArrowRightSLine } from "react-icons/ri";
 
-const Sign_in = ({ navigate }) => {
+const Sign_in = ({ navigate, darunnur }) => {
   const [user, setUser] = useState([]);
   const [check, setCheck] = useState(false);
 
@@ -17,14 +17,13 @@ const Sign_in = ({ navigate }) => {
     e.target.reset();
   };
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <div className="w-[100%] h-[4rem] bg-white text-[2rem] text-[#010080] flex flex-row justify-center items-center font-extrabold">
         <p onClick={() => navigate("/")} className="cursor-pointer">
-          {" "}
-          𝔐&𝔨 Travels & Tour
+          <img src={darunnur} alt="" className="w-[100% h-[35px]" />
         </p>
       </div>
-      <div className="bg-[#010080] flex flex-col justify-center items-center  w-[100vw]">
+      <div className="bg-[#010080] flex flex-col justify-center items-center  w-[100vw] pb-[5rem]">
         <p className="text-[1rem] text-white my-[3%] font-extrabold">
           CREATE ACCOUNT
         </p>

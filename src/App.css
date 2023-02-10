@@ -108,3 +108,6 @@ form .a {
 .container p {
   @apply text-left mx-[1rem];
 }
+.affilateInput input {
+  @apply outline-0;
+}

@@ -9,7 +9,7 @@ import Mail from "../Service/Mail";
 import Services from "../Service/Services";
 import Nav_bar from "../Navigation/Nav_bar";
 
-const Home = ({ shownav, setShownav, navigate }) => {
+const Home = ({ shownav, setShownav, navigate, darunnur }) => {
   const [flightDetails, setFlightDetails] = useState(true);
   const [hotelDetails, setHotelDetails] = useState(true);
 
@@ -20,6 +20,7 @@ const Home = ({ shownav, setShownav, navigate }) => {
         setFlightDetails={setFlightDetails}
         shownav={shownav}
         setShownav={setShownav}
+        darunnur={darunnur}
       />
       <Brand
         flightDetails={flightDetails}

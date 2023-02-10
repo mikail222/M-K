@@ -10,7 +10,7 @@ const SlideShow = () => {
   return (
     <div>
       <div className="slider">
-        <div className="slide-container text-white ">
+        <div className="slide-container text-white flex flex-col  text-right">
           <p className="text-[0.90rem]">
             For cheaper Virgin tickets, please call 08124330616
           </p>

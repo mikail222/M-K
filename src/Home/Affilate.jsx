@@ -8,9 +8,7 @@ import offer from "../assets/pngtree-percent-sign-3d-icon-render-png-image_61164
 import satisfaction from "../assets/51-510761_100-satisfaction-guarantee-label-removebg.png";
 import Mail from "../Service/Mail";
 import Footer from "../Footer/Footer";
-const Affilate = () => {
-  const affilateman =
-    "https://media.istockphoto.com/id/1298353587/photo/smiling-handsome-25s-middle-eastern-man-showing-okay-sign-holding-smartphone-isolated-over.jpg?s=612x612&w=0&k=20&c=FcFGgUIHFkFJCSDeF9ptk5DIFqVRTMkoye78TPD22ww=";
+const Affilate = ({ navigate }) => {
   return (
     <div>
       <Nav_bar />
@@ -23,6 +21,7 @@ const Affilate = () => {
             <img src={logo} alt="" className="w-[15rem]" />
             <button
               type="button"
+              onClick={() => navigate("/Affilate_Registration")}
               className="bg-[#ffb712] text-white w-[55%] py-[1rem] rounded-[3px] my-[2rem] outline-0 text-[0.9rem] font-extrabold"
             >
               Get started
